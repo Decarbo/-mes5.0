@@ -1,0 +1,107 @@
+.navbar {
+  font-family: font3;
+  z-index: 1000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Keep the navbar fixed at the top */
+  width: 100%;
+  border-bottom: 1px solid #8888889b;
+  background: #0c03482f; /* Semi-transparent white background */
+  border-radius: 0.2rem; /* Rounded corners */
+  padding: 20px; /* Padding around the text */
+  backdrop-filter: blur(20px); /* Blur effect */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+}
+
+.logo {
+  font-size: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+#active {
+  background-color: #b3bde1; /* Light hover effect */
+  border-radius: 0.5rem;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 0.3rem;
+  transition: ease-in 0.3s;
+}
+
+.nav-list a:hover {
+  background-color: #b3bde1; /* Light hover effect */
+  border-radius: 5px;
+  letter-spacing: 0.2rem;
+  transition: ease-in 0.3s;
+}
+
+/* Mobile Styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 3px 0;
+}
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+/* Media Queries */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 5rem; /* Adjust based on navbar height */
+    left: 0;
+    border-bottom: 1px solid #8888889b;
+    background: #0c03482f; /* Semi-transparent white background */
+    & li {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+  .nav-list.active {
+    display: flex;
+    border-bottom: 1px solid #8888889b;
+    background: #0808089d; /* Semi-transparent white background */
+    border-radius: 0.2rem; /* Rounded corners */
+    padding: 20px; /* Padding around the text */
+    backdrop-filter: blur(20px); /* Blur effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  html {
+    font-size: 80%;
+  }
+}
