@@ -1,11 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>MES Gallery | Mechanical Engineering Society</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="navbar.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+   <style>
+      .gallery-container {
+         padding: 6rem 2rem;
+         min-height: 100vh;
+       background: #030140;
+	background: linear-gradient(180deg, #030140, #030140);
+      }
+
+      .gallery-header {
+         text-align: center;
+         margin-bottom: 3rem;
+      }
+
+      .gallery-header h1 {
+         color: #b3bde1;
+         font-family: font5;
+         font-size: 2.5rem;
+         letter-spacing: 0.3rem;
+         text-shadow: 0 0 10px rgba(179, 189, 225, 0.5), 0 0 20px rgba(179, 189, 225, 0.3);
+         animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      .gallery-description {
+         max-width: 800px;
+         margin: 0 auto 3rem;
+         text-align: center;
+      }
+
+      .gallery-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 2rem;
+         max-width: 1400px;
+         margin: 0 auto;
+      }
+
+      .gallery-item {
+         overflow: hidden;
+         border-radius: 8px;
+         position: relative;
+         aspect-ratio: 1;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gallery-item:hover {
+         transform: translateY(-10px);
+       background: #030140;
+
+      }
+
+      .gallery-item img {
+         aspect-ratio: 1;
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+         transition: transform 0.5s ease;
+      }
+
+      .gallery-item:hover img {
+         transform: scale(1.1);
+      }
+
+      .gallery-caption {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background: rgba(35, 1, 64, 0.8);
+         color: #e2eff7;
+         padding: 1rem;
+         transform: translateY(100%);
+         transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover .gallery-caption {
+         transform: translateY(0);
+      }
+
+      .gallery-caption h3 {
+         margin: 0 0 5px;
+         font-family: font4;
+      }
+
+      .gallery-caption p {
+         margin: 0;
+         font-size: 0.9rem;
+         opacity: 0.9;
+      }
+
+      @media (max-width: 768px) {
+         .gallery-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+         }
+      }
+
+      @media (max-width: 480px) {
+         .gallery-grid {
+            grid-template-columns: 1fr;
+         }
+      }
+   </style>
 </head>
+
 <body>
-   
+   <nav class="navbar" data-aos="fade-down">
+      <div class="logo">
+         <div>
+            <img class="bitlogo" src="Animated-Portfolio-main/logo/BitSindrilogo.webp" alt="BIT Sindri Logo" width="50"
+               height="50">
+         </div>
+         <div>
+            <img src="Animated-Portfolio-main/logo/mech logo2 best final-3.webp" alt="MES Logo" width="50" height="55">
+         </div>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+      </div>
+      <ul class="nav-list">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="./Yantrika.html">Yantrika</a></li>
+         <li><a href="./Members.html">Members</a></li>
+         <li><a href="./Gallery.html" id="active">Gallery</a></li>
+         <li><a href="./join.html">Join</a></li>
+      </ul>
+   </nav>
+
+   <div class="gallery-container">
+      <div class="gallery-header" data-aos="fade-up">
+         <h1>GALLERY</h1>
+         <div class="gallery-description">
+            <p class="highlight-text" data-aos="fade-up" data-aos-delay="300">
+               MOMENTS THAT ENGINEERED EXCELLENCE
+               <br>
+               Browse through our visual journey of innovation, collaboration, and achievement. Each image captures not
+               just an event, but a milestone in our collective pursuit of mechanical engineering excellence.
+            </p>
+         </div>
+      </div>
+
+      <div class="gallery-grid">
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="./Animated-Portfolio-main/achivements/achievement1.webp" alt="Workshop Event">
+            <div class="gallery-caption">
+               <h3>Technical Workshop</h3>
+               <p>Students collaborating during our annual technical workshop series</p>
+            </div>
+         </div>
+
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="./Animated-Portfolio-main/achivements/achievement2.webp" alt="Competition">
+            <div class="gallery-caption">
+               <h3>Robotics Competition</h3>
+               <p>Innovative designs from our robotics challenge</p>
+            </div>
+         </div>
+
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="./Animated-Portfolio-main/achivements/achievement4.webp" alt="Exhibition">
+            <div class="gallery-caption">
+               <h3>Project Exhibition</h3>
+               <p>Showcasing student innovations and research</p>
+            </div>
+         </div>
+
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="./Animated-Portfolio-main/achivements/achievement5.webp" alt="Industry Visit">
+            <div class="gallery-caption">
+               <h3>Industry Visit</h3>
+               <p>Exploring real-world applications of mechanical engineering</p>
+            </div>
+         </div>
+
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="./Animated-Portfolio-main/achivements/achievement6 (1).webp" alt="Team Competition">
+            <div class="gallery-caption">
+               <h3>Team Competition</h3>
+               <p>MES members winning accolades at national competitions</p>
+            </div>
+         </div>
+
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="./Animated-Portfolio-main/achivements/achievement7.webp" alt="Guest Lecture">
+            <div class="gallery-caption">
+               <h3>Expert Lecture Series</h3>
+               <p>Learning from industry experts and academic leaders</p>
+            </div>
+         </div>
+
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="./Animated-Portfolio-main/achivements/achievement8.webp" alt="Workshop">
+            <div class="gallery-caption">
+               <h3>Hands-on Workshop</h3>
+               <p>Practical training sessions for enhanced skill development</p>
+            </div>
+         </div>
+
+         <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="./Animated-Portfolio-main/achivements/achievement1.webp" alt="Yantrika Event">
+            <div class="gallery-caption">
+               <h3>Yantrika 2023</h3>
+               <p>Highlights from our flagship annual techfest</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="footer" data-aos="fade-up">
+      <section class="footer">
+         <div class="footer-row">
+            <div class="footer-col">
+               <h4>Explore</h4>
+               <ul class="links">
+                  <li>Design And Developed by Team MES. Copyright © 2025. All Rights Reserved.</li>
+               </ul>
+            </div>
+
+            <div class="footer-col">
+               <h4>Newsletter</h4>
+               <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.
+               </p>
+               <form action="#">
+                  <input type="text" placeholder="Your email" required />
+                  <button type="submit">SUBSCRIBE</button>
+               </form>
+               <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-github"></i>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+   <script defer src="script.js"></script>
 </body>
+
 </html>
