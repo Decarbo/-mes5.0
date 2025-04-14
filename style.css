@@ -71,6 +71,62 @@ body {
 	height: 100vh;
 }
 
+.mesdomain {
+	color: #b3bde1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	padding: 1rem;
+}
+
+.domain {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+
+	transition: 1s all;
+	width: 100%;
+}
+
+.domain2 {
+	display: flex;
+	/* flex-direction: column; */
+	border-radius: 0.3rem;
+	gap: 1rem;
+	padding: 1rem;
+	background: #030140;
+	background: linear-gradient(37deg, #03014078, #0301402e);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border: 1px solid rgba(174, 174, 174, 0.509);
+	backdrop-filter: blur(10px);
+	transition: 1s all;
+	aspect-ratio: 4;
+	overflow: hidden;
+}
+
+.domain2>div:first-child {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5rem;
+}
+
+.domain img {
+	width: 4rem;
+	height: 4rem;
+	object-fit: contain;
+}
+
+.domain2 p {
+	font-size: 0.9rem;
+	line-height: 1.4;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+}
+
 .backvid2 {
 	/* height: 100vh; */
 	overflow: hidden;
@@ -94,7 +150,14 @@ body {
 }
 
 .heading {
-	position: relative;
+	/* position: relative; */
+	/* border: 2px solid red; */
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	position: absolute;
 	color: #e2eff7;
 	text-align: center;
 	font-size: 3rem;
@@ -106,25 +169,22 @@ body {
 	/* padding: 2rem; */
 }
 
-.heading::before {
-	position: absolute;
-	top: -10%;
-	left: 40%;
+/* .heading::before {
+	content: "Mechanical Engenerring";
+
 	margin-bottom: 4rem;
 	margin-inline: auto;
 	text-align: center;
-	/* color: #7489c6; */
 	text-align: center;
-	font-size: 0.8rem;
+	font-size: 3rem;
 
-	/* content: "society with technical Members"; */
 	font-weight: 400;
 	font-weight: 400;
 	letter-spacing: 0.2rem;
 	font-family: font3;
 	text-shadow: 0 0 10px rgba(226, 239, 247, 0.5), 0 0 20px rgba(226, 239, 247, 0.3), 0 0 30px rgba(226, 239, 247, 0.2);
 	animation: glow 2s all infinite alternate;
-}
+} */
 
 @font-face {
 	font-family: 'Aerospace';
@@ -355,11 +415,12 @@ body {
 	padding: 2rem;
 	max-width: 80vw;
 	margin: 0 auto;
-		transition: 1s all;
+	transition: 1s all;
 }
 
 .offer-box {
 	/* background: linear-gradient(5deg, #4e4e4e44, #010101); */
+	text-align: center;
 	border-radius: 0.3rem;
 	padding: 1.5rem;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -423,7 +484,8 @@ body {
 /* Responsive adjustments */
 @media (max-width: 1200px) {
 	.offer {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-around;
 	}
 }
 
@@ -737,7 +799,7 @@ body {
 	}
 
 	.heading {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 
 	.offer {
@@ -756,7 +818,7 @@ body {
 	}
 
 	.heading {
-		font-size: 1.5rem;
+		font-size: 3.8rem;
 	}
 }
 
@@ -910,5 +972,28 @@ body {
 
 	.highlight-text {
 		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.domain {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.mesdomain {
+		display: none;
+		/* position: relative;
+		margin-top: 2rem; */
+	}
+
+	.domain {
+		grid-template-columns: 1fr;
+	}
+
+	.domain2 {
+		aspect-ratio: 4;
+		max-width: 100%;
 	}
 }

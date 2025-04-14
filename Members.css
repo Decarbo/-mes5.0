@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "Aerospace";
   src: url("Animated-Portfolio-main/Aerospace.otf") format("otf"),
@@ -13,27 +14,32 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "font2";
   src: url("Animated-Portfolio-main/AnkhSanctuary-PVK0B.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "font3";
   src: url("./Animated-Portfolio-main/Infusive.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
+
 @media (max-width: 768px) {
   html {
     font-size: 50%;
   }
 }
+
 body {
   font-family: font3, sans-serif;
   font-optical-sizing: auto;
@@ -56,7 +62,20 @@ body {
   font-size: 4rem;
   letter-spacing: 0.7rem;
 }
-
+.members{
+  max-width: 80vw;
+  margin: 2rem auto;
+}
+.members ul{
+  list-style: none;
+  font-size: 2rem;
+  color: #7489c6;
+  font-family: font3;
+  text-align: left;
+}
+.members li{
+  margin-top: 1rem;
+}
 .yantrika {
   max-width: 80vw;
   padding-top: 2rem;
@@ -95,16 +114,16 @@ body {
   transition: all 0.3s ease;
 }
 
-.member-card:hover .member-image {
-  border-color: rgba(255, 255, 255, 0.3);
-  transform: scale(1.05);
-}
-
 .member-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.3s ease;
+}
+
+.member-card:hover .member-image {
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
 }
 
 .member-info {
@@ -158,6 +177,32 @@ body {
   fill: currentColor;
 }
 
+.role-section {
+  margin-bottom: 3rem;
+}
+
+.role-title {
+  color: #7489c6;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  letter-spacing: 0.1rem;
+  font-family: "Outfit", sans-serif;
+}
+
+.role-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: #7489c6;
+  border-radius: 2px;
+}
+
 .members-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -198,13 +243,74 @@ body {
   border-radius: 2px;
 }
 
+@media (max-width: 992px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .member-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 @media (max-width: 768px) {
   .members-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
+    gap: 1rem;
   }
+
+  .member-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .member-info h3 {
+    font-size: 1rem;
+  }
+
+  .member-info h4 {
+    font-size: 0.8rem;
+  }
+
+  .role-title {
+    font-size: 1.2rem;
+  }
+
   .page1 h1 {
     padding-top: 10rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card {
+    /* max-width: 280px; */
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .member-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .member-info h3 {
+    font-size: 0.9rem;
+  }
+
+  .member-info h4 {
+    font-size: 0.75rem;
+  }
+
+  .member-info p {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
   }
 }
