@@ -27,27 +27,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+
 
 // CSS for cross icon
 const style = document.createElement('style');
@@ -82,4 +62,62 @@ const loadingElement = document.querySelector("[data-loading]");
 window.addEventListener("load", function () {
   loadingElement.classList.add("loaded");
   document.body.classList.remove("active");
+});
+
+// Typing effect
+const text = "Welcomes Batch 2K24";
+const typingText = document.querySelector('.typing-text');
+let i = 0;
+let isDeleting = false;
+let speed = 100;
+
+function typeWriter() {
+  if (!isDeleting && i < text.length) {
+    // Typing
+    typingText.textContent += text.charAt(i);
+    i++;
+    speed = 100;
+  } else if (isDeleting && i > 0) {
+    // Deleting
+    typingText.textContent = text.substring(0, i - 1);
+    i--;
+    speed = 50;
+  } else {
+    // Switch between typing and deleting
+    isDeleting = !isDeleting;
+    speed = isDeleting ? 1000 : 500; // Pause at the end of each phase
+  }
+
+  setTimeout(typeWriter, speed);
+}
+
+// Start typing effect when the page loads
+window.addEventListener('load', typeWriter);
+
+// Initialize Yantrika Swiper
+const yantrikaSwiper = new Swiper('.yantrikaSwiper', {
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    }
+  }
 });

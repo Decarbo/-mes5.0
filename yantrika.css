@@ -35,8 +35,9 @@ body {
 
 
 .page1 {
-  padding: 1rem;
-  padding-top: 3rem;
+  /* background: url(./Animated-Portfolio-main/yantrikaevents/yantrikapp.webp); */
+  /* padding: 1rem; */
+  /* padding-top: 3rem; */
   min-height: 70vh;
   text-align: center;
   background: #030140;
@@ -80,14 +81,19 @@ body {
 }
 .events {
   font-family: font2;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: aliceblue;
   margin-top: 3rem;
   letter-spacing: 0.3rem;
   text-align: end;
+  border: 1px solid #7489c6;
+  padding: 1rem;
+  border-radius: 1rem;
   & li {
+    border: 1px solid #7489c6;
+    border-radius: 1rem;
     list-style: none;
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-family: font3;
     font-weight: 300;
     text-align: start;
@@ -95,6 +101,10 @@ body {
     transition: all 0.3s ease;
     position: relative;
     padding-left: 2rem;
+    &:hover {
+      color: #7489c6;
+      background-color: #030140;
+    }
   }
   & a {
     /* border: 1px solid #7489c6; */
@@ -299,7 +309,18 @@ section {
   height: 250px;
   aspect-ratio: 1/1;
 }
-
+.swiper-slide .event-content h3 {
+  font-family: font2;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #2b86c5;
+  text-align: center;
+  background-color: #030140;
+  border-radius: 1rem;
+  /* color: white; */
+  position: relative;
+  padding-left: 1rem;
+}
 .swiper-slide img {
   position: absolute;
   inset: 0;
@@ -533,8 +554,9 @@ section {
 .event-content h3 {
   font-family: font2;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   color: #2b86c5;
+  /* color: white; */
   position: relative;
   padding-left: 1rem;
 }
@@ -563,12 +585,15 @@ section {
   overflow: hidden;
   border-radius: 1rem;
   aspect-ratio: 1/1;
+  height: 50vh;
+  /* width: 50vw; */
 }
 
 .event-image img {
+  border-radius: 1rem;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
@@ -597,7 +622,9 @@ section {
   }
 
   .event-content h3 {
-    font-size: 1.5rem;
+    padding: 0.4rem;
+    font-size: 2rem;
+    color: #E0CBFF;
   }
 
   .section-title {
@@ -614,11 +641,11 @@ section {
 
 .yantrikavid video {
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 80%;
+  object-fit: contain;
   padding-bottom: 2rem;
 }
 
@@ -643,3 +670,83 @@ section {
     font-size: 4rem;
   }
 }
+.bigtext {
+  /* margin-top: 3rem; */
+  animation: glitch 3.5s steps(100) infinite;
+  color: #E0CBFF;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+
+
+@keyframes glitch {
+  0% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  1% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  2% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  3% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  4% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  12% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  13% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  14% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  15% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  16% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  17% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  18% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  19% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  20% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  21% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  22% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  23% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  34% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  35% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  36% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  37% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  38% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  39% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  40% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  41% { text-shadow: 25px 0 0 #0c33f5, -45px 0 0 lime; filter: blur(0);}
+  42% { text-shadow: 0 0 0 #0c33f5, 0 0 0 lime; filter: blur(0);}
+  43% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  44% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  45% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  54% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  55% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0.5px);}
+  56% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  57% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  58% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  59% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  60% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  61% { text-shadow: 20px 0 0 red, -30px 0 0 lime; filter: blur(0);}
+  62% { text-shadow: 0 0 0 red, 0 0 0 lime; filter: blur(0);}
+  63% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  64% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  65% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  66% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0.5px);}
+  76% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  77% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  78% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  79% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  80% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  81% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  82% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  83% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  84% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  85% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  86% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  87% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  88% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  89% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  90% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  91% { text-shadow: 20px 0 0 lime, -60px 0 0 #0c33f5; filter: blur(0);}
+  92% { text-shadow: 0 0 0 lime, 0 0 0 #0c33f5; filter: blur(0);}
+  92% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  93% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  94% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  95% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  96% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  97% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  98% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  99% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} }

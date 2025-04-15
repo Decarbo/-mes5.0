@@ -22,50 +22,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-	.nav-list {
-		display: none;
-		flex-direction: column;
-		width: 100%;
-		position: absolute;
-		top: 60px;
-		/* Adjust based on navbar height */
-		left: 0;
-		border-bottom: 1px solid #8888889b;
-		background: #0c03482f;
 
-		/* Semi-transparent white background */
-		& li {
-			margin-top: 1rem;
-			font-size: 2rem;
-		}
-		html{
-			font-size: 70%
-		}
-	}
-
-	.nav-list.active {
-		display: flex;
-		border-bottom: 1px solid #8888889b;
-		background: #0c034855;
-		/* Semi-transparent white background */
-		border-radius: 0.2rem;
-		/* Rounded corners */
-		padding: 20px;
-		/* Padding around the text */
-		backdrop-filter: blur(20px);
-		/* Blur effect */
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		/* Shadow for depth */
-	}
-
-	.menu-toggle {
-		display: flex;
-	}
-
-
-}
 
 @font-face {
 	font-family: 'Aerospace';

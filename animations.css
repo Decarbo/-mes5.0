@@ -26,35 +26,35 @@
 .floating-icon:nth-child(1) {
   animation-delay: 0s;
   animation-duration: 7s;
-  top: -40px;
+  top: -60%;
   left: 30%;
 }
 
 .floating-icon:nth-child(2) {
   animation-delay: 1s;
   animation-duration: 6s;
-  top: -20px;
+  top: -80%;
   left: 60%;
 }
 
 .floating-icon:nth-child(3) {
   animation-delay: 2s;
   animation-duration: 8s;
-  top: 30px;
+  top: -50%;
   left: 45%;
 }
 
 .floating-icon:nth-child(4) {
   animation-delay: 3s;
   animation-duration: 7.5s;
-  top: -120px;
+  top: -20%;
   left: 75%;
 }
 
 .floating-icon:nth-child(5) {
   animation-delay: 4s;
   animation-duration: 6.5s;
-  top: 50px;
+  top: -20%;
   left: 20%;
 }
 
@@ -65,18 +65,22 @@
     transform: scale(0.5) translateZ(-300px) rotate(-5deg);
     opacity: 0;
   }
+
   15% {
     transform: scale(0.7) translateZ(-150px) rotate(0deg);
     opacity: 0.7;
   }
+
   45% {
     transform: scale(1) translateZ(0) rotate(5deg);
     opacity: 1;
   }
+
   75% {
     transform: scale(1.3) translateZ(150px) rotate(0deg);
     opacity: 0.7;
   }
+
   100% {
     transform: scale(1.5) translateZ(300px) rotate(-5deg);
     opacity: 0;
@@ -133,7 +137,8 @@
 
   /* Further adjust positions for mobile */
   .floating-icon:nth-child(1) {
-    top: -25px;   left: 10%;
+    top: -25px;
+    left: 10%;
   }
 
   .floating-icon:nth-child(2) {
