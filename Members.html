@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="Members.css" />
   <link rel="stylesheet" href="navbar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
 </head>
 
 <body>
@@ -52,10 +53,10 @@
     </div>
     <div class="members">
       <ul class="batch-nav">
-        <li><a href="#batch-2k22">Batch 2k22</a></li>
-        <li><a href="#batch-2k21">Batch 2k21</a></li>
-        <li><a href="#batch-2k20">Batch 2k20</a></li>
-        <li><a href="#batch-2k20">Coordinator</a></li>
+        <li><a href="#batch-2k22" class="batch-link">Batch 2k22</a></li>
+        <li><a href="#batch-2k21" class="batch-link">Batch 2k21</a></li>
+        <li><a href="#batch-2k20" class="batch-link">Batch 2k20</a></li>
+        <li><a href="#batch-2k23" class="batch-link">Coordinators</a></li>
       </ul>
     </div>
   </div>
@@ -63,8 +64,21 @@
   <section class="next-gen" data-aos="fade-up" id="batch-2k21">
     <h2>Batch 2k21 (Office Bearers - Session 2023–24)</h2>
 
+    <!-- <div class="position-nav">
+      <button class="position-btn" data-position="general-affair">Secretary of General Affair</button>
+      <button class="position-btn" data-position="financial-affair">Secretary of Financial Affair</button>
+      <button class="position-btn" data-position="research-development">Research and Development</button>
+      <button class="position-btn" data-position="editor-chief">Editor-in-Chief</button>
+      <button class="position-btn" data-position="sports-cultural">Sports and Cultural</button>
+      <button class="position-btn" data-position="design-technical">Design and Technical</button>
+      <button class="position-btn" data-position="alumni-relations">Alumni and Relations</button>
+      <button class="position-btn" data-position="public-relation">Public Relation Officer</button>
+      <button class="position-btn" data-position="media-sponsorship">Media and Sponsorship</button>
+      <button class="position-btn" data-position="event-coordinator">Event Coordinator</button>
+    </div> -->
+
     <!-- Secretary of General Affair -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="general-affair">
       <h3 class="role-title">Secretary of General Affair</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -94,7 +108,7 @@
     </div>
 
     <!-- Secretary of Financial Affair -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="financial-affair">
       <h3 class="role-title">Secretary of Financial Affair</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -124,7 +138,7 @@
     </div>
 
     <!-- Research and Development -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="research-development">
       <h3 class="role-title">Research and Development</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -154,7 +168,7 @@
     </div>
 
     <!-- Editor-in-Chief -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="editor-chief">
       <h3 class="role-title">Editor-in-Chief</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -184,7 +198,7 @@
     </div>
 
     <!-- Sports and Cultural -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="sports-cultural">
       <h3 class="role-title">Sports and Cultural</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -214,7 +228,7 @@
     </div>
 
     <!-- Design and Technical -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="design-technical">
       <h3 class="role-title">Design and Technical</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -244,7 +258,7 @@
     </div>
 
     <!-- Alumni and Relations -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="alumni-relations">
       <h3 class="role-title">Alumni and Relations</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -274,7 +288,7 @@
     </div>
 
     <!-- Public Relation Officer -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="public-relation">
       <h3 class="role-title">Public Relation Officer</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -316,7 +330,7 @@
     </div>
 
     <!-- Media and Sponsorship -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="media-sponsorship">
       <h3 class="role-title">Media and Sponsorship</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -358,7 +372,7 @@
     </div>
 
     <!-- Event Coordinator -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="event-coordinator">
       <h3 class="role-title">Event Coordinator</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -402,8 +416,20 @@
   <section class="office-bearers" data-aos="fade-up" id="batch-2k22">
     <h2>Batch 2k22 (Office Bearers - Session 2024–25)</h2>
 
+    <!-- <div class="position-nav">
+      <button class="position-btn" data-position="general-affairs">Secretary of General Affairs</button>
+      <button class="position-btn" data-position="financial-affairs">Secretary of Financial Affairs</button>
+      <button class="position-btn" data-position="research-development">Research and Development</button>
+      <button class="position-btn" data-position="editor-chief">Editor-in-Chief</button>
+      <button class="position-btn" data-position="design-technical">Design and Technical Head</button>
+      <button class="position-btn" data-position="sports-cultural">Sports and Cultural</button>
+      <button class="position-btn" data-position="public-relation">Public Relation Officer</button>
+      <button class="position-btn" data-position="alumni-relations">Alumni and Relations</button>
+      <button class="position-btn" data-position="media-sponsorship">Media and Sponsorship</button>
+    </div> -->
+
     <!-- Secretary of General Affairs -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="general-affairs">
       <h3 class="role-title">Secretary of General Affairs</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -433,7 +459,7 @@
     </div>
 
     <!-- Secretary of Financial Affairs -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="financial-affairs">
       <h3 class="role-title">Secretary of Financial Affairs</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -463,7 +489,7 @@
     </div>
 
     <!-- Research and Development -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="research-development">
       <h3 class="role-title">Research and Development</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -494,7 +520,7 @@
     </div>
 
     <!-- Editor-in-Chief -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="editor-chief">
       <h3 class="role-title">Editor-in-Chief</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -512,7 +538,7 @@
     </div>
 
     <!-- Design and Technical Head -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="design-technical">
       <h3 class="role-title">Design and Technical Head</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -542,7 +568,7 @@
     </div>
 
     <!-- Sports and Cultural -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="sports-cultural">
       <h3 class="role-title">Sports and Cultural</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -573,7 +599,7 @@
     </div>
 
     <!-- Public Relation Officer -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="public-relation">
       <h3 class="role-title">Public Relation Officer</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -591,7 +617,7 @@
     </div>
 
     <!-- Alumni and Relations -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="alumni-relations">
       <h3 class="role-title">Alumni and Relations</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -622,7 +648,7 @@
     </div>
 
     <!-- Sourav Kumar Pandey (didn't have a role specified in list) -->
-    <div class="role-section" data-aos="fade-up">
+    <div class="role-section" data-aos="fade-up" data-position="media-sponsorship">
       <h3 class="role-title">Media and Sponsorship</h3>
       <div class="members-grid" data-aos="fade-up">
         <div class="member-card" data-aos="fade-up">
@@ -634,6 +660,354 @@
           <div class="member-info" data-aos="fade-up">
             <h3>Sourav Kumar Pandey</h3>
             <h4>Media and Sponsorship</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="office-bearers" data-aos="fade-up" id="batch-2k23">
+    <h2>MES Coordinators</h2>
+
+    <!-- <div class="position-nav">
+        <button class="position-btn" data-position="coordinators">All Coordinators</button>
+      </div> -->
+
+    <!-- Coordinators -->
+    <div class="role-section" data-aos="fade-up" data-position="coordinators">
+      <h3 class="role-title">Coordinators</h3>
+      <div class="members-grid" data-aos="fade-up">
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG-20231224-WA0001 - ROSHAN KUMAR.webp" alt="Roshan Kumar"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Roshan Kumar</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG_20250222_000023216 - Amaan Hussain.webp" alt="Amaan Hussain"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Amaan Hussain</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/20250416_092206 - Shruti Pandey.webp" alt="Shruti Pandey"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Shruti Pandey</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG-20240927-WA0011~2 - Priyanka Jaiswal.webp"
+              alt="Priyanka Jaiswal" width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Priyanka Jaiswal</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/SAVE_20240516_203305 - Sipten Raza.webp" alt="Sipten Raza"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Sipten Raza</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG-20250411-WA0084 - Suku Mishra.webp" alt="Suku Mishra"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Suku Mishra</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/B612_20250208_233753_379 - Biswajit Bhattacharya.webp"
+              alt="Biswajit Bhattacharya" width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Biswajit Bhattacharya</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG20231021220900 - Indronil Supakar.webp" alt="Indronil Supakar"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Indronil Supakar</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG20241201165540~2 - Prasoon Kumar.webp" alt="Prasoon Kumar"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Prasoon Kumar</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/1740073836565 - Sumit Kumar Mandal.webp" alt="Sumit Kumar Mandal"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Sumit Kumar Mandal</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG-20241030-WA0002-removebg-preview - Satyam Kumar, mech_085.webp"
+              alt="Satyam Kumar" width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Satyam Kumar</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG_20250112_210223 - Sarthak Ranjan_ME084.webp"
+              alt="Sarthak Ranjan" width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Sarthak Ranjan</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG_20250222_162941 - Abhishek Das.webp" alt="Abhishek Das"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Abhishek Das</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG-20240417-WA0005 - MES RIYA DUBEY.webp" alt="Riya Dubey"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Riya Dubey</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/Snapchat-849216766 - MES.webp" alt="MES" width="200" height="250"
+              loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>sagir</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+
+
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG-20250129-WA0015 - Sumit Choudhary.webp" alt="Sumit Choudhary"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Sumit Choudhary</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="role-title">2k24 Batch</h3>
+      <div class="members-grid" data-aos="fade-up">
+
+
+
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG-20250415-WA0007 - MES.webp" alt="MES" width="200" height="250"
+              loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Aryan</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG_20250415_123556 - kajal.webp" alt="Kajal" width="200"
+              height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Kajal</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG_20230221_141602 - Prateek Maru.webp" alt="Prateek Maru"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Prateek Maru</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/DSC_4853-min - Shruti Barnwal.webp" alt="Shruti Barnwal"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Shruti Barnwal</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/SAKET~2 - Saket Dubey.webp" alt="Saket Dubey" width="200"
+              height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Saket Dubey</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/retouch_2025041508195157-01 - Niraj.webp" alt="Niraj" width="200"
+              height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Niraj prajapati</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/WhatsAppImage2024-05-11at22 - Tawishaa Kashyap.webp"
+              alt="Tawishaa Kashyap" width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Tawishaa Kashyap</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/IMG_20250414_175534 - Subham Mohanty.webp" alt="Subham Mohanty"
+              width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Subham Mohanty</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img src="./Animated-Portfolio-main/Photo/Linkedin_DP - Cj Lucky.webp" alt="Cj Lucky" width="200"
+              height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Cj Lucky</h3>
+            <h4>Coordinator</h4>
+            <p>Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="member-card" data-aos="fade-up">
+          <div class="member-image" data-aos="fade-up">
+            <img
+              src="./Animated-Portfolio-main/Photo/Screenshot_2024-09-19-21-18-07-517_com.miui.gallery_Original - Ragvendra pratap Singh.webp"
+              alt="Ragvendra Pratap Singh" width="200" height="250" loading="lazy" />
+          </div>
+          <div class="member-info" data-aos="fade-up">
+            <h3>Ragvendra Pratap Singh</h3>
+            <h4>Coordinator</h4>
             <p>Mechanical Engineering</p>
           </div>
         </div>
@@ -972,6 +1346,88 @@
         mobileMenu.classList.remove("open");
         document.body.classList.remove("menu-open");
       }
+    });
+
+    // Handle position navigation
+    const positionBtns = document.querySelectorAll('.position-btn');
+    const roleSections = document.querySelectorAll('.role-section');
+
+    positionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons and sections
+        positionBtns.forEach(b => b.classList.remove('active'));
+        roleSections.forEach(section => section.classList.remove('active'));
+
+        // Add active class to clicked button
+        btn.classList.add('active');
+
+        // Show corresponding section
+        const position = btn.dataset.position;
+        const activeSection = document.querySelector(`.role-section[data-position="${position}"]`);
+        if (activeSection) {
+          activeSection.classList.add('active');
+          // Scroll to the section with smooth behavior
+          activeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Handle batch navigation
+    const batchLinks = document.querySelectorAll('.batch-link');
+    const batchSections = document.querySelectorAll('section[id^="batch-"]');
+
+    batchLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Remove active class from all links
+        batchLinks.forEach(l => l.classList.remove('active'));
+
+        // Add active class to clicked link
+        link.classList.add('active');
+
+        // Hide all sections
+        batchSections.forEach(section => {
+          section.style.display = 'none';
+        });
+
+        // Show selected section
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.style.display = 'block';
+
+          // Show first position by default and scroll to it
+          const firstPositionBtn = targetSection.querySelector('.position-btn');
+          if (firstPositionBtn) {
+            firstPositionBtn.click();
+          }
+        }
+      });
+    });
+
+    // Show first batch and position by default
+    if (batchLinks.length > 0) {
+      batchLinks[0].click();
+    }
+
+    // Add scroll event listener to update active position button
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.role-section');
+      const positionBtns = document.querySelectorAll('.position-btn');
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 150 && rect.bottom >= 150) {
+          const position = section.dataset.position;
+          positionBtns.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.position === position) {
+              btn.classList.add('active');
+            }
+          });
+        }
+      });
     });
   </script>
   <script src="script.js"></script>

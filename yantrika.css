@@ -310,10 +310,10 @@ section {
   aspect-ratio: 1/1;
 }
 .swiper-slide .event-content h3 {
-  font-family: font2;
+  font-family: font3;
   font-size: 1rem;
   margin-top: 1rem;
-  color: #2b86c5;
+  color: #ff3cac;
   text-align: center;
   background-color: #030140;
   border-radius: 1rem;
@@ -547,12 +547,13 @@ section {
 }
 
 .event-content {
+  font-family: font3;
   flex: 1;
   color: #e2eff7;
 }
 
 .event-content h3 {
-  font-family: font2;
+  font-family: font3;
   font-size: 2rem;
   margin-top: 1rem;
   color: #2b86c5;

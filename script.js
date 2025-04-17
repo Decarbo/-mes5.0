@@ -117,7 +117,7 @@ const yantrikaSwiper = new Swiper('.yantrikaSwiper', {
       slidesPerView: 2,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     }
   }
 });

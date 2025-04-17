@@ -1,0 +1,147 @@
+/* Responsive Image Styles */
+.mesimg img,
+.swiper-slide img,
+.pinterest-item img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   display: block;
+   max-width: 100%;
+}
+
+/* Logo Responsiveness */
+.logo img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* Gallery Image Container */
+.mesimg-scroll {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+
+.mesimg-track {
+   display: flex;
+   gap: 20px;
+   animation: scroll 20s linear infinite;
+}
+
+/* Pinterest Grid Layout */
+.pinterest-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   gap: 20px;
+   padding: 20px;
+}
+
+.pinterest-item {
+   position: relative;
+   overflow: hidden;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pinterest-item img {
+   transition: transform 0.3s ease;
+}
+
+.pinterest-item:hover img {
+   transform: scale(1.05);
+}
+
+/* Swiper Slider Responsiveness */
+.swiper {
+   width: 100%;
+   height: auto;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.swiper-slide {
+   text-align: center;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+   .pinterest-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   }
+}
+
+@media (max-width: 768px) {
+   .pinterest-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+   }
+
+   .mesimg-track {
+      gap: 10px;
+   }
+
+   .logo img {
+      max-width: 80%;
+   }
+}
+
+@media (max-width: 480px) {
+   .pinterest-grid {
+      grid-template-columns: 1fr;
+   }
+
+   .mesimg-track {
+      gap: 5px;
+   }
+
+   .logo img {
+      max-width: 70%;
+   }
+}
+
+/* Animation for scrolling images */
+@keyframes scroll {
+   0% {
+      transform: translateX(0);
+   }
+
+   100% {
+      transform: translateX(-100%);
+   }
+}
+
+/* Image Loading Fallback */
+img {
+   background-color: #f0f0f0;
+   background-image: linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd),
+      linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
+   background-size: 20px 20px;
+   background-position: 0 0, 10px 10px;
+}
+
+/* Image Error Handling */
+img[src$=".webp"] {
+   background-color: #f0f0f0;
+}
+
+/* Ensure proper aspect ratio */
+.aspect-ratio-box {
+   position: relative;
+   width: 100%;
+   padding-top: 56.25%;
+   /* 16:9 Aspect Ratio */
+}
+
+.aspect-ratio-box img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
