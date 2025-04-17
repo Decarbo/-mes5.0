@@ -6,6 +6,7 @@
   box-sizing: border-box;
   /* transition: 1s all; */
 }
+
 @font-face {
   font-family: "Aerospace";
   src: url("Animated-Portfolio-main/Aerospace.otf") format("otf"),
@@ -14,18 +15,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
   background-color: #010101;
 }
+
 @font-face {
   font-family: "font2";
   src: url("Animated-Portfolio-main/AnkhSanctuary-PVK0B.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "font3";
   src: url("./Animated-Portfolio-main/Infusive.ttf") format("truetype");
@@ -66,6 +70,7 @@ body {
   font-family: "Outfit", sans-serif;
   /* border: 2px solid red; */
 }
+
 #btn {
   border: 1px solid #7489c6;
   background: #030140;
@@ -79,6 +84,7 @@ body {
   border-radius: 0.5rem;
   background: linear-gradient(0deg, #030140, #010101);
 }
+
 .events {
   font-family: font2;
   font-size: 1.5rem;
@@ -89,6 +95,7 @@ body {
   border: 1px solid #7489c6;
   padding: 1rem;
   border-radius: 1rem;
+
   & li {
     border: 1px solid #7489c6;
     border-radius: 1rem;
@@ -101,11 +108,13 @@ body {
     transition: all 0.3s ease;
     position: relative;
     padding-left: 2rem;
+
     &:hover {
       color: #7489c6;
       background-color: #030140;
     }
   }
+
   & a {
     /* border: 1px solid #7489c6; */
     all: unset;
@@ -136,6 +145,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -160,11 +170,9 @@ section {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.28) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.28) 0%,
+      rgba(255, 255, 255, 0) 100%);
   backdrop-filter: blur(30px);
   border-radius: 20px;
   width: min(900px, 100%);
@@ -201,16 +209,20 @@ section {
 
 
 @keyframes gelatine {
+
   0%,
   100% {
     transform: scale(1, 1);
   }
+
   25% {
     transform: scale(0.9, 1.1);
   }
+
   50% {
     transform: scale(1.1, 0.9);
   }
+
   75% {
     transform: scale(0.95, 1.05);
   }
@@ -294,8 +306,7 @@ section {
 
 .swiper {
   width: 250px;
-  height: 250px
-  ;
+  height: 250px;
 
   padding: 2rem;
 }
@@ -309,6 +320,7 @@ section {
   height: 250px;
   aspect-ratio: 1/1;
 }
+
 .swiper-slide .event-content h3 {
   font-family: font3;
   font-size: 1rem;
@@ -321,6 +333,7 @@ section {
   position: relative;
   padding-left: 1rem;
 }
+
 .swiper-slide img {
   position: absolute;
   inset: 0;
@@ -390,12 +403,10 @@ section {
   width: 20px;
   height: 20px;
   background-color: #ff3cac;
-  background-image: linear-gradient(
-    225deg,
-    #ff3cac 0%,
-    #784ba0 50%,
-    #2b86c5 100%
-  );
+  background-image: linear-gradient(225deg,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%);
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
@@ -636,7 +647,8 @@ section {
 .yantrikavid {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
   overflow: hidden;
 }
 
@@ -667,10 +679,12 @@ section {
   .yantrikavid h1 {
     font-size: 3rem;
   }
-  .page1 h1{
+
+  .page1 h1 {
     font-size: 4rem;
   }
 }
+
 .bigtext {
   /* margin-top: 3rem; */
   animation: glitch 3.5s steps(100) infinite;
@@ -683,71 +697,363 @@ section {
 
 
 @keyframes glitch {
-  0% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
-  1% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
-  2% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
-  3% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
-  4% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
-  12% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
-  13% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
-  14% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
-  15% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
-  16% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  17% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  18% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  19% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  20% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  21% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
-  22% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
-  23% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
-  34% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  35% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
-  36% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
-  37% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
-  38% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  39% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  40% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  41% { text-shadow: 25px 0 0 #0c33f5, -45px 0 0 lime; filter: blur(0);}
-  42% { text-shadow: 0 0 0 #0c33f5, 0 0 0 lime; filter: blur(0);}
-  43% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
-  44% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
-  45% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
-  54% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
-  55% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0.5px);}
-  56% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
-  57% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
-  58% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
-  59% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
-  60% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
-  61% { text-shadow: 20px 0 0 red, -30px 0 0 lime; filter: blur(0);}
-  62% { text-shadow: 0 0 0 red, 0 0 0 lime; filter: blur(0);}
-  63% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
-  64% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
-  65% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
-  66% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0.5px);}
-  76% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
-  77% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
-  78% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
-  79% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
-  80% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
-  81% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
-  82% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
-  83% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
-  84% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
-  85% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
-  86% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
-  87% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
-  88% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  89% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  90% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
-  91% { text-shadow: 20px 0 0 lime, -60px 0 0 #0c33f5; filter: blur(0);}
-  92% { text-shadow: 0 0 0 lime, 0 0 0 #0c33f5; filter: blur(0);}
-  92% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
-  93% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
-  94% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
-  95% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
-  96% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  97% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  98% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  99% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} }
+  0% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  1% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  2% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  3% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  4% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  12% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  13% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  14% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0);
+  }
+
+  15% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0);
+  }
+
+  16% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  17% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  18% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  19% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  20% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  21% {
+    text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime;
+    filter: blur(0);
+  }
+
+  22% {
+    text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime;
+    filter: blur(0);
+  }
+
+  23% {
+    text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime;
+    filter: blur(0);
+  }
+
+  34% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  35% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  36% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  37% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  38% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  39% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  40% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  41% {
+    text-shadow: 25px 0 0 #0c33f5, -45px 0 0 lime;
+    filter: blur(0);
+  }
+
+  42% {
+    text-shadow: 0 0 0 #0c33f5, 0 0 0 lime;
+    filter: blur(0);
+  }
+
+  43% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0);
+  }
+
+  44% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0);
+  }
+
+  45% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0);
+  }
+
+  54% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  55% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0.5px);
+  }
+
+  56% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0.5px);
+  }
+
+  57% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0.5px);
+  }
+
+  58% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  59% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  60% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  61% {
+    text-shadow: 20px 0 0 red, -30px 0 0 lime;
+    filter: blur(0);
+  }
+
+  62% {
+    text-shadow: 0 0 0 red, 0 0 0 lime;
+    filter: blur(0);
+  }
+
+  63% {
+    text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  64% {
+    text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  65% {
+    text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  66% {
+    text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5;
+    filter: blur(0.5px);
+  }
+
+  76% {
+    text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  77% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  78% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  79% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  80% {
+    text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  81% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0);
+  }
+
+  82% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0);
+  }
+
+  83% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  84% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  85% {
+    text-shadow: 1px 0 0 red, -1px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  86% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  87% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0.5px);
+  }
+
+  88% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  89% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  90% {
+    text-shadow: -3px 0 0 red, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  91% {
+    text-shadow: 20px 0 0 lime, -60px 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  92% {
+    text-shadow: 0 0 0 lime, 0 0 0 #0c33f5;
+    filter: blur(0);
+  }
+
+  92% {
+    text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime;
+    filter: blur(0);
+  }
+
+  93% {
+    text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime;
+    filter: blur(0);
+  }
+
+  94% {
+    text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime;
+    filter: blur(0);
+  }
+
+  95% {
+    text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime;
+    filter: blur(0);
+  }
+
+  96% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  97% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  98% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  99% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+
+  100% {
+    text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime;
+    filter: blur(0);
+  }
+}
+
+
+.yantrika-font {
+
+  width: 100%;
+
+ 
+}
+
+.yantrika-font img {
+  background-color: red;
+  background: linear-gradient(#fff, #ffe29d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  mix-blend-mode: color-dodge;
+  margin: 0 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
