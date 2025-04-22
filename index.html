@@ -1,503 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="navbar.css" />
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+		<link
+			rel="stylesheet"
+			href="animations.css" />
+		<link
+			rel="stylesheet"
+			href="Galeery.css" />
+		<link
+			rel="stylesheet"
+			href="footer.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="navbar.css">
-	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-	<link rel="stylesheet" href="animations.css" />
-	<link rel="stylesheet" href="Galeery.css">
-	<link rel="stylesheet" href="footer.css">
-
-</head>
-
-<body>
-	<div class="loading" data-loading>
-		<img src="./Animated-Portfolio-main/images/mech logo2 best final-3.webp" width="100" height="100" alt="loading"
-			class="img">
-		<img src="./Animated-Portfolio-main/images/loading-circle.svg" width="80" height="80" alt="" class="circle">
-	</div>
-	<main>
-		<div class="hero" data-aos="fade-up">
-
-			<nav class="navbar" data-aos="fade-down">
-				<div class="logo">
-					<div>
-						<img class="bitlogo" src="Animated-Portfolio-main/logo/BitSindrilogo.webp" alt="BIT Sindri Logo"
-							width="50" height="50">
+	<body>
+		<div
+			class="loading"
+			data-loading>
+			<img
+				src="./Animated-Portfolio-main/images/mech logo2 best final-3.webp"
+				width="100"
+				height="100"
+				alt="loading"
+				class="img" />
+			<img
+				src="./Animated-Portfolio-main/images/loading-circle.svg"
+				width="80"
+				height="80"
+				alt=""
+				class="circle" />
+		</div>
+		<main>
+			<div
+				class="hero"
+				data-aos="fade-up">
+				<nav
+					class="navbar"
+					data-aos="fade-down">
+					<div class="logo">
+						<div>
+							<img
+								class="bitlogo"
+								src="Animated-Portfolio-main/logo/BitSindrilogo.webp"
+								alt="BIT Sindri Logo"
+								width="50"
+								height="50" />
+						</div>
+						<div>
+							<img
+								src="Animated-Portfolio-main/logo/mech logo2 best final-3.webp"
+								alt="MES Logo"
+								width="50"
+								height="55" />
+						</div>
 					</div>
-					<div>
-						<img src="Animated-Portfolio-main/logo/mech logo2 best final-3.webp" alt="MES Logo" width="50"
-							height="55">
+					<div
+						class="menu-toggle"
+						id="mobile-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
 					</div>
+					<ul class="nav-list">
+						<li>
+							<a
+								href="#home"
+								id="active">
+								Home
+							</a>
+						</li>
+						<li><a href="./Yantrika.html">Yantrika</a></li>
+						<li><a href="./Members.html">Members</a></li>
+						<li><a href="./Gallery.html">Gallery</a></li>
+						<li><a href="./join.html">Join</a></li>
+					</ul>
+				</nav>
 
-				</div>
-				<div class="menu-toggle" id="mobile-menu">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</div>
-				<ul class="nav-list">
-					<li>
-						<a href="#home" id="active">Home</a>
-					</li>
-					<li><a href="./Yantrika.html">Yantrika</a></li>
-					<li><a href="./Members.html">Members</a></li>
-					<li><a href="./Gallery.html">Gallery</a></li>
-					<li><a href="./join.html">Join</a></li>
-				</ul>
-			</nav>
-
-			<div class="back1" data-aos="fade-right">
-				<div class="backvid">
-					<video src="./Animated-Portfolio-main/videos/169343-841069110_medium.mp4" autoplay muted loop playsinline
-						preload="metadata" loading="lazy"></video>
-				</div>
-				<div class="mesdomain">
-					<div class="domain">
-						<div class="left-domain">
-							<div class="domain2">
-								<div><img
-										src="Animated-Portfolio-main/logo/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png"
-										alt=""></div>
-								<div>
-									<p class="title">webdevelopment</p>
-									<p class="para">
-										We offer a dynamic space for coding and web development
-									</p>
+				<div
+					class="back1"
+					data-aos="fade-right">
+					<div class="backvid">
+						<video
+							src="./Animated-Portfolio-main/videos/lv_0_20250421083201.mp4"
+							autoplay
+							muted
+							loop
+							playsinline
+							preload="metadata"
+							loading="lazy"></video>
+					</div>
+					<div class="mesdomain">
+						<div class="domain">
+							<div class="left-domain">
+								<div class="domain2">
+									<div>
+										<img
+											src="Animated-Portfolio-main/logo/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png"
+											alt="" />
+									</div>
+									<div>
+										<p class="title">webdevelopment</p>
+										<p class="para">We offer a dynamic space for coding and web development</p>
+									</div>
+								</div>
+								<div class="domain2">
+									<div>
+										<img
+											src="Animated-Portfolio-main/logo/Canva-Logo-PNG-File.png"
+											alt="" />
+									</div>
+									<div>
+										<p class="title">Graphic Designing</p>
+										<p class="para">Creativity meets technology—design is at the heart of every mes student.</p>
+									</div>
 								</div>
 							</div>
-							<div class="domain2">
-								<div><img src="Animated-Portfolio-main/logo/Canva-Logo-PNG-File.png" alt=""></div>
-								<div>
-									<p class="title">Graphic Designing</p>
-									<p class="para"> Creativity meets technology—design is at the heart of every mes student.
-									</p>
+							<div class="right-domain">
+								<div class="domain2">
+									<div>
+										<img
+											src="Animated-Portfolio-main/logo/015cae4e521337140707c25761f1f7b5.png"
+											alt="" />
+									</div>
+									<div>
+										<p class="title">Video Editing</p>
+										<p class="para">Explore the art and science of storytelling through professional video editing.</p>
+									</div>
+								</div>
+								<div class="domain2">
+									<div>
+										<img
+											src="Animated-Portfolio-main/logo/015cae4e521337140707c25761f1f7b5.png"
+											alt="" />
+									</div>
+									<div>
+										<p class="title">content writing</p>
+										<p class="para">We create impactful content through powerful and creative writing</p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="right-domain">
-							<div class="domain2">
-								<div><img src="Animated-Portfolio-main/logo/015cae4e521337140707c25761f1f7b5.png" alt=""></div>
-								<div>
-									<p class="title">Video Editing</p>
-									<p class="para"> Explore the art and science of storytelling through professional video
-										editing.
-									</p>
-								</div>
-							</div>
-							<div class="domain2">
-								<div><img src="Animated-Portfolio-main/logo/015cae4e521337140707c25761f1f7b5.png" alt=""></div>
-								<div>
-									<p class="title">content writing</p>
-									<p class="para">We create impactful content through powerful and creative writing
-									</p>
-								</div>
-							</div>
+					</div>
+					<div class="heading">
+						<br />
+						<div class="headtop">
+							<p>PRIDE HONOR GLORY</p>
+						</div>
+						<br />
+						<div class="bigtext">
+							MECHANICAL
+							<br />
+							ENGINEERING
+							<br />
+							SOCIETY
+						</div>
+						<!-- <br> -->
+						<div class="headwelcome">
+							<span class="typing-text"></span>
+						</div>
+						<div class="floating-icons">
+							<img
+								src="./Animated-Portfolio-main/logo/Canva-Logo-PNG-File.png"
+								alt=""
+								width="50"
+								height="50"
+								class="floating-icon"
+								loading="lazy" />
+							<img
+								src="./Animated-Portfolio-main/logo/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png"
+								alt=""
+								width="50"
+								height="50"
+								class="floating-icon"
+								loading="lazy" />
+							<img
+								src="./Animated-Portfolio-main/logo/adobe-photoshop-logo-0-2048x2048-1-768x768.png"
+								alt=""
+								width="50"
+								height="50"
+								class="floating-icon"
+								loading="lazy" />
+							<img
+								src="./Animated-Portfolio-main/logo/5436946.png"
+								alt=""
+								width="50"
+								height="50"
+								class="floating-icon"
+								loading="lazy" />
+							<img
+								src="./Animated-Portfolio-main/logo/015cae4e521337140707c25761f1f7b5.png"
+								alt=""
+								width="50"
+								height="50"
+								class="floating-icon"
+								loading="lazy" />
 						</div>
 					</div>
-
 				</div>
-				<div class="heading">
-					<br>
-					<div class="headtop">
-						<p>PRIDE HONOR GLORY</p>
-					</div>
-					<br>
-					<div class="bigtext">
-						MECHANICAL<br />
-						ENGINEERING<br />
-						SOCIETY
-					</div>
-					<!-- <br> -->
-					<div class="headwelcome">
-						<span class="typing-text"></span>
-					</div>
-					<div class="floating-icons">
-						<img src="./Animated-Portfolio-main/logo/Canva-Logo-PNG-File.png" alt="" width="50" height="50"
-							class="floating-icon" loading="lazy" />
-						<img
-							src="./Animated-Portfolio-main/logo/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png"
-							alt="" width="50" height="50" class="floating-icon" loading="lazy" />
-						<img src="./Animated-Portfolio-main/logo/adobe-photoshop-logo-0-2048x2048-1-768x768.png" alt=""
-							width="50" height="50" class="floating-icon" loading="lazy" />
-						<img src="./Animated-Portfolio-main/logo/5436946.png" alt="" width="50" height="50"
-							class="floating-icon" loading="lazy" />
-						<img src="./Animated-Portfolio-main/logo/015cae4e521337140707c25761f1f7b5.png" alt="" width="50"
-							height="50" class="floating-icon" loading="lazy" />
 
-					</div>
-				</div>
-			</div>
-
-			<div class="back2">
-				<div class="backvid2">
-					<!-- <video src="./Animated-Portfolio-main/videos/blackhwwwole.mp4" autoplay muted loop playsinline
+				<div class="back2">
+					<div class="backvid2">
+						<!-- <video src="./Animated-Portfolio-main/videos/blackhwwwole.mp4" autoplay muted loop playsinline
 						preload="metadata" loading="lazy"></video> -->
-
-
-				</div>
-			</div>
-		</div>
-		</div>
-
-		<!-- Page 2 Section -->
-		<div class="page2" data-aos="zoom-in-up">
-			<h2>About Mes</h2>
-			<div class="aboutmes" data-aos="fade-up" data-aos-anchor-placement="top-center">
-				<div class="mesbox">
-					<div class="boximg" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center">
-						<img src="./Animated-Portfolio-main/images/aboutmes .png" alt="Thumbnail" />
-					</div>
-					<div class="boxtext" data-aos=fade-down" data-aos-duration="500">
-						Mechanical Engineering Society of BIT Sindri was established to meet the diversified challenges and
-						bring out innovative approach in the fields of Mechanical engineering. It provides industrial exposure
-						to draw the practical application of concepts and avails its members a platform to enrich their
-						management skills. Under the guidance of HOD Dr. S.K. Singh sir and other associate professors,
-						Mechanical Engineering Society is progressing towards achieving its goals. Animi!
-						<br />
-						<br />
-						With the motto of holistic development, Mechanical Engineering Society focuses on the personality
-						devlopment and enhancement of technical skills of students in B.I.T Sindri.
-						<br />
-						<br />
-						<span class="highlight-text" data-aos="fade-up" data-aos-delay="300">Innovating today for a mechanized
-							tomorrow. Join us as we bridge theoretical knowledge with practical excellence, fostering a
-							community of future-ready mechanical engineers who don't just understand machines - they
-							revolutionize them.</span>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="page4" data-aos="zoom-in-up">
-			<h2 data-aos="fade-up">OUR MOTTO</h2>
-			<div class="offer">
-				<div class="offer-box" data-aos="fade-up" data-aos-duration="1000">
-					<div class="offer-icon">
-						<i class="fa-solid fa-rocket"></i>
-					</div>
-					<h3>DEVELOPMENT</h3>
-					<div class="box-content">
-						<p class="box-section">TO BRING HOLISTIC DEVELOPMENT OF STUDENTS BY GENTLE MANIFESTATION OF THE MIND
-							AND THEREBY DEVELOPMENT OF THE PLACEMENT SCENARIO.</p>
-					</div>
-				</div>
-				<div class="offer-box" data-aos="fade-up" data-aos-duration="1000">
-					<div class="offer-icon">
-						<i class="fa-solid fa-globe"></i>
-					</div>
-					<h3>EXPOSURE</h3>
-					<div class="box-content">
-						<p class="box-section">TO PROVIDE ALL ROUND DEVELOPMENT OF THE DEPARTMENT IN FIELD OF RESEARCH AND
-							TRAINING. TO BRIDGE THE GAP BETWEEN DEPARTMENT AND INDUSTRY AND ESCORTING IN THE NEW ERA OF
-							ESSENCE.</p>
-					</div>
-				</div>
-				<div class="offer-box" data-aos="fade-up" data-aos-duration="1000">
-					<div class="offer-icon">
-						<i class="fa-solid fa-handshake"></i>
-					</div>
-					<h3>CONNECTION</h3>
-					<div class="box-content">
-						<p class="box-section">TO ESTABLISH A CONCRETE FOUNDATION BETWEEN THE ALUMNI AND THE DEPARTMENT FOR
-							ALL ROUND HOLISTIC DEVELOPMENT.</p>
+			<!-- Page 2 Section -->
+			<div
+				class="page2"
+				data-aos="zoom-in-up">
+				<h2>About Mes</h2>
+				<div
+					class="aboutmes"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center">
+					<div class="mesbox">
+						<div
+							class="boximg"
+							data-aos="fade-up"
+							data-aos-duration="3000"
+							data-aos-anchor-placement="top-center">
+							<img
+								src="./Animated-Portfolio-main/images/aboutmes .png"
+								alt="Thumbnail" />
+						</div>
+						<div
+							class="boxtext"
+							data-aos="fade-down"
+							data-aos-duration="500">
+							Mechanical Engineering Society of BIT Sindri was established to meet the diversified challenges and bring out innovative approach in the fields of Mechanical engineering. It provides industrial exposure to draw the practical application of concepts and avails its members a platform to enrich their management skills. Under the guidance of HOD Dr. S.K. Singh sir and other associate professors, Mechanical Engineering Society is progressing towards achieving its goals. Animi!
+							<br />
+							<br />
+							With the motto of holistic development, Mechanical Engineering Society focuses on the personality devlopment and enhancement of technical skills of students in B.I.T Sindri.
+							<br />
+							<br />
+							<span
+								class="highlight-text"
+								data-aos="fade-up"
+								data-aos-delay="300">
+								Innovating today for a mechanized tomorrow. Join us as we bridge theoretical knowledge with practical excellence, fostering a community of future-ready mechanical engineers who don't just understand machines - they revolutionize them.
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="page42">
-			<h2 data-aos="fade-up">We Offer</h2>
-			<div class="offer">
-				<div class="offer-box" data-aos="fade-up" data-aos-duration="1000">
-					<div class="offer-icon">
-						<i class="fa-solid fa-book"></i>
-					</div>
-					<h3>E-Library</h3>
-					<div class="box-content">
-						<p class="box-section">We bring to you a portable and easy to access library where you can drown
-							yourself in books just through a simple click. From educational books on the theories of Mechanical
-							Engineering to magazines on machine and tech, browse as much as you can and find your pick.</p>
-					</div>
-					<a href="https://drive.google.com/drive/folders/156t9psF8i16F-yRBgxMKpD82ZXWYAHk_?usp=sharing"><button
-							class="future-btn" data-aos="fade" data-aos-delay="400">Access Now
-						</button></a>
-				</div>
-				<div class="offer-box" data-aos="fade-up" data-aos-duration="1000">
-					<div class="offer-icon">
-						<i class="fa-solid fa-flask"></i>
-					</div>
-					<h3>Research & Internship</h3>
-					<div class="box-content">
-						<p class="box-section">Mechanical Engineering Society has come up with this section that provides all
-							the information about ongoing research programs and research internship opportunities under the
-							guidance of learned professors, that would surely take your academic score to the next level.</p>
-					</div>
 
-				</div>
-				<div class="offer-box" data-aos="fade-up" data-aos-duration="1000">
-					<div class="offer-icon">
-						<i class="fa-solid fa-network-wired"></i>
+			<div
+				class="page4"
+				data-aos="zoom-in-up">
+				<h2 data-aos="fade-up">OUR MOTTO</h2>
+				<div class="offer">
+					<div
+						class="offer-box"
+						data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="offer-icon">
+							<i class="fa-solid fa-rocket"></i>
+						</div>
+						<h3>DEVELOPMENT</h3>
+						<div class="box-content">
+							<p class="box-section">TO BRING HOLISTIC DEVELOPMENT OF STUDENTS BY GENTLE MANIFESTATION OF THE MIND AND THEREBY DEVELOPMENT OF THE PLACEMENT SCENARIO.</p>
+						</div>
 					</div>
-					<h3>CONNECTION</h3>
-					<div class="box-content">
-						<p class="box-section">TO ESTABLISH A CONCRETE FOUNDATION BETWEEN THE ALUMNI AND THE DEPARTMENT FOR
-							ALL ROUND HOLISTIC DEVELOPMENT.</p>
+					<div
+						class="offer-box"
+						data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="offer-icon">
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<h3>EXPOSURE</h3>
+						<div class="box-content">
+							<p class="box-section">TO PROVIDE ALL ROUND DEVELOPMENT OF THE DEPARTMENT IN FIELD OF RESEARCH AND TRAINING. TO BRIDGE THE GAP BETWEEN DEPARTMENT AND INDUSTRY AND ESCORTING IN THE NEW ERA OF ESSENCE.</p>
+						</div>
+					</div>
+					<div
+						class="offer-box"
+						data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="offer-icon">
+							<i class="fa-solid fa-handshake"></i>
+						</div>
+						<h3>CONNECTION</h3>
+						<div class="box-content">
+							<p class="box-section">TO ESTABLISH A CONCRETE FOUNDATION BETWEEN THE ALUMNI AND THE DEPARTMENT FOR ALL ROUND HOLISTIC DEVELOPMENT.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="page5">
+			<div class="page42">
+				<h2 data-aos="fade-up">We Offer</h2>
+				<div class="offer">
+					<div
+						class="offer-box"
+						data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="offer-icon">
+							<i class="fa-solid fa-book"></i>
+						</div>
+						<h3>E-Library</h3>
+						<div class="box-content">
+							<p class="box-section">We bring to you a portable and easy to access library where you can drown yourself in books just through a simple click. From educational books on the theories of Mechanical Engineering to magazines on machine and tech, browse as much as you can and find your pick.</p>
+						</div>
+						<a href="https://drive.google.com/drive/folders/156t9psF8i16F-yRBgxMKpD82ZXWYAHk_?usp=sharing">
+							<button
+								class="future-btn"
+								data-aos="fade"
+								data-aos-delay="400">
+								Access Now
+							</button>
+						</a>
+					</div>
+					<div
+						class="offer-box"
+						data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="offer-icon">
+							<i class="fa-solid fa-flask"></i>
+						</div>
+						<h3>Research & Internship</h3>
+						<div class="box-content">
+							<p class="box-section">Mechanical Engineering Society has come up with this section that provides all the information about ongoing research programs and research internship opportunities under the guidance of learned professors, that would surely take your academic score to the next level.</p>
+						</div>
+					</div>
+					<div
+						class="offer-box"
+						data-aos="fade-up"
+						data-aos-duration="1000">
+						<div class="offer-icon">
+							<i class="fa-solid fa-network-wired"></i>
+						</div>
+						<h3>CONNECTION</h3>
+						<div class="box-content">
+							<p class="box-section">TO ESTABLISH A CONCRETE FOUNDATION BETWEEN THE ALUMNI AND THE DEPARTMENT FOR ALL ROUND HOLISTIC DEVELOPMENT.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page5">
+				<h1 data-aos="fade-up">Events</h1>
 
-			<h1 data-aos="fade-up">Events</h1>
-
-			<!-- <div class="yantrikaimg" data-aos="zoom-in" data-aos-duration="2000">
+				<!-- <div class="yantrikaimg" data-aos="zoom-in" data-aos-duration="2000">
 				<img src="./Animated-Portfolio-main/yantrikaevents/yantyrikaposter.webp" alt="" />
 			</div> -->
-			<div class="yantrikaslider">
-				<div class="swiper yantrikaSwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/IMG-20250214-WA0001.webp" alt="ROBOWARS">
-								</div>
-								<div class="event-content">
-									<h3>EXHIBIZONE</h3>
-									<p>Unleash your creative prowess at EXHIBIZONE – a celebration of engineering marvels and
-										mechanical mastery! Witness live demonstrations, hands-on models, and futuristic concepts
-										brought to life by brilliant minds. This is your chance to showcase, explore, and inspire
-										innovation.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/IMG-20250214-WA0002.webp" alt="HACKATHON">
-								</div>
-								<div class="event-content">
-									<h3> MECHIE OF THE YEAR</h3>
-									<p>A battle of brilliance where the finest mechanical minds compete for the ultimate title –
-										Mechie of the Year! Display your technical knowledge, problem-solving skills, and
-										all-round excellence in this dynamic showdown of intellect and innovation.</p>
+				<div class="yantrikaslider">
+					<div class="swiper yantrikaSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/guesttalk.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>guest talks</h3>
+										<p>The Mechanical Engineering Society at BIT Sindri, Dhanbad, hosted inspiring guest talks under the banner of Yantrika, aimed at enriching the academic experience of students. Through Yantrika Guest Talks, students gained valuable exposure to real-world applications, emerging trends, and challenges in the mechanical engineering domain.</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/IMG-20250214-WA0003.webp" alt="MECHATHON">
-								</div>
-								<div class="event-content">
-									<h3>MECH-A-HUNT</h3>
-									<p>Gear up for an adrenaline-pumping mechanical treasure hunt! Solve puzzles, crack codes,
-										and race against time in MECH-A-HUNT – a thrilling journey through the world of machines
-										and mystery.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/IMG-20250214-WA0004.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>WATER ROCKET CHALLENGE</h3>
-									<p>Design. Launch. Compete. The WATER ROCKET CHALLENGE lets you engineer your own rocket and
-										aim for the skies! Combine physics with creativity to outperform in this fun,
-										splash-filled contest of trajectory and precision.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/guesttalk.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>guest talks</h3>
-									<p>The Mechanical Engineering Society at BIT Sindri, Dhanbad, hosted inspiring guest talks
-										under the banner of Yantrika, aimed at enriching the academic experience of students.
-										Through Yantrika Guest Talks, students gained valuable exposure to real-world
-										applications, emerging trends, and challenges in the mechanical engineering domain.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/green.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>green olympiad</h3>
-									<p>The Green Olympiad is a prestigious event organized by the Mechanical Engineering Society
-										at BIT Sindri, Dhanbad. It is a platform for students to showcase their innovative
-										solutions to environmental challenges. The competition encourages creativity, teamwork,
-										and practical application of engineering principles to address real-world problems.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/smart.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>smart campus</h3>
-									<p>The Smart Campus initiative is a comprehensive project designed to transform the BIT
-										Sindri campus into a state-of-the-art, sustainable, and technologically advanced
-										environment. This initiative aims to integrate cutting-edge technologies, smart
-										infrastructure, and innovative solutions to enhance the learning experience and
-										operational efficiency of the institution.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/mad.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>mad cad</h3>
-									<p>The MAD CAD event is a celebration of creativity and innovation in the field of mechanical
-										design. It showcases the best projects and designs created by students using CAD software,
-										highlighting their technical skills and design capabilities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/meche meet.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>mech-e-meet</h3>
-									<p>The Mech-E-Meet event is a platform for students to showcase their technical skills and
-										innovative projects. It provides an opportunity for them to network with industry
-										professionals and explore potential career opportunities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/mechovert.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>mech-o-vert</h3>
-									<p>The Mech-O-Vert event is a platform for students to showcase their technical skills and
-										innovative projects. It provides an opportunity for them to network with industry
-										professionals and explore potential career opportunities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/guest.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>guest lecture</h3>
-									<p>The Guest Lecture event is a platform for students to learn from industry experts and
-										explore potential career opportunities. It provides an opportunity for them to network
-										with industry professionals and explore potential career opportunities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/mockup desgine.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>mock group discussion</h3>
-									<p>The Mock Group Discussion event is a platform for students to learn from industry experts
-										and explore potential career opportunities. It provides an opportunity for them to network
-										with industry professionals and explore potential career opportunities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/mech a pin.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>mech-a-pin</h3>
-									<p>The Mech-A-Pin event is a platform for students to learn from industry experts and explore
-										potential career opportunities. It provides an opportunity for them to network with
-										industry professionals and explore potential career opportunities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/shastra.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>shastra'24</h3>
-									<p>The Shastra'24 event is a platform for students to learn from industry experts and explore
-										potential career opportunities. It provides an opportunity for them to network with
-										industry professionals and explore potential career opportunities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/autoquest.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>auto-quest</h3>
-									<p>The Auto-Quest event is a platform for students to learn from industry experts and explore
-										potential career opportunities. It provides an opportunity for them to network with
-										industry professionals and explore potential career opportunities.</p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="event-card">
-								<div class="event-logo">
-									<img src="./Animated-Portfolio-main/slider/akriti.webp" alt="WORKSHOPS">
-								</div>
-								<div class="event-content">
-									<h3>akriti'24</h3>
-									<p>The Mechanical Engineering Society at BIT Sindri hosted an enriching 3-
-										Days CAD workshop, "Aakriti 22". This workshop aimed to provide
-										participants with a comprehensive understanding of computer-aided
-										design (CAD) techniques and applications.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-pagination"></div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-				</div>
-			</div>
-			<div class="yantrika" data-aos="fade-up">
-				<p>"YANTRIKA" is the annual techfest that brings many opportunities for budding minds on the campus and
-					outside. It is a platform for students to showcase their technical and managerial skills and explore
-					innovative ideas. The techfest features various events, workshops, exhibitions, and competitions in the
-					fields of engineering, science, technology and management and also provides the opportunity for students
-					to gain exposure to the latest technologies.</p>
-				<p class="highlight-text" data-aos="fade-up" data-aos-delay="300">"Where engineering meets imagination!
-					YANTRIKA isn't just an event - it's a launchpad for groundbreaking ideas, a playground for technical
-					brilliance, and a showcase of engineering evolution. Be part of something extraordinary."</p>
-				<a href="./Yantrika.html"><button id="btn">Explore Yantrika</button></a>
 
-				<!-- <div class="events">
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/meche meet.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>mech-e-meet</h3>
+										<p>The Mech-E-Meet event is a platform for students to showcase their technical skills and innovative projects. It provides an opportunity for them to network with industry professionals and explore potential career opportunities.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/mechovert.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>mech-o-vert</h3>
+										<p>The Mech-O-Vert event is a platform for students to showcase their technical skills and innovative projects. It provides an opportunity for them to network with industry professionals and explore potential career opportunities.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/guest.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>guest lecture</h3>
+										<p>The Guest Lecture event is a platform for students to learn from industry experts and explore potential career opportunities. It provides an opportunity for them to network with industry professionals and explore potential career opportunities.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/mockup desgine.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>mock group discussion</h3>
+										<p>The Mock Group Discussion event is a platform for students to learn from industry experts and explore potential career opportunities. It provides an opportunity for them to network with industry professionals and explore potential career opportunities.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/mech a pin.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>mech-a-pin</h3>
+										<p>The Mech-A-Pin event is a platform for students to learn from industry experts and explore potential career opportunities. It provides an opportunity for them to network with industry professionals and explore potential career opportunities.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/shastra.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>shastra'24</h3>
+										<p>The Shastra'24 event is a platform for students to learn from industry experts and explore potential career opportunities. It provides an opportunity for them to network with industry professionals and explore potential career opportunities.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/autoquest.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>auto-quest</h3>
+										<p>The Auto-Quest event is a platform for students to learn from industry experts and explore potential career opportunities. It provides an opportunity for them to network with industry professionals and explore potential career opportunities.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="event-card">
+									<div class="event-logo">
+										<img
+											src="./Animated-Portfolio-main/slider/akriti.webp"
+											alt="WORKSHOPS" />
+									</div>
+									<div class="event-content">
+										<h3>akriti'24</h3>
+										<p>The Mechanical Engineering Society at BIT Sindri hosted an enriching 3- Days CAD workshop, "Aakriti 22". This workshop aimed to provide participants with a comprehensive understanding of computer-aided design (CAD) techniques and applications.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+				<div
+					class="yantrika"
+					data-aos="fade-up">
+					<p>"YANTRIKA" is the annual techfest that brings many opportunities for budding minds on the campus and outside. It is a platform for students to showcase their technical and managerial skills and explore innovative ideas. The techfest features various events, workshops, exhibitions, and competitions in the fields of engineering, science, technology and management and also provides the opportunity for students to gain exposure to the latest technologies.</p>
+					<p
+						class="highlight-text"
+						data-aos="fade-up"
+						data-aos-delay="300">
+						"Where engineering meets imagination! YANTRIKA isn't just an event - it's a launchpad for groundbreaking ideas, a playground for technical brilliance, and a showcase of engineering evolution. Be part of something extraordinary."
+					</p>
+					<a href="./Yantrika.html"><button id="btn">Explore Yantrika</button></a>
+
+					<!-- <div class="events">
             <h2>EVENTS</h2>
             <ul>
               <li>Lorem, ipsum dolor.</li>
@@ -507,141 +518,297 @@
               <li>Doloribus, illo impedit!</li>
             </ul>
           </div> -->
-			</div>
-		</div>
-		<div class="page7" data-aos="fade-up">
-			<h2>ENGINEER YOUR FUTURE</h2>
-			<div class="future-content">
-				<p class="highlight-text" data-aos="fade-up" data-aos-delay="300">Join a community that transforms classroom
-					concepts into real-world innovations. MES isn't just a society - it's your gateway to industry
-					connections, cutting-edge research, and the collaborative spirit that defines modern engineering
-					excellence.</p>
-				<div class="future-icons" data-aos="zoom-in" data-aos-duration="2000">
-					<div class="future-icon">
-						<i class="fa-solid fa-graduation-cap"></i>
-						<span>Academic Excellence</span>
-					</div>
-					<div class="future-icon">
-						<i class="fa-solid fa-industry"></i>
-						<span>Industry Connect</span>
-					</div>
-					<div class="future-icon">
-						<i class="fa-solid fa-lightbulb"></i>
-						<span>Innovation Hub</span>
-					</div>
-				</div>
-				<a href="./join.html"><button class="future-btn" data-aos="flip-up" data-aos-delay="400">JOIN
-						US</button></a>
-			</div>
-		</div>
-		<div class="page6" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
-			<h2>Achievements</h2>
-			<div class="page6event">
-				<div class="smallcard">
-					<div class="cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
-						<figure class="card">
-							<img src="Animated-Portfolio-main/achivements/PERMINDER SINGH sir.png" alt="" width="300"
-								height="200" loading="lazy" />
-							<figcaption class="card_title">PERMINDER SINGH Google Summer of Code 2024 </figcaption>
-						</figure>
-					</div>
-					<div class="cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
-						<figure class="card">
-							<img src="./Animated-Portfolio-main/achivements/subham.png" alt="" width="300" height="200"
-								loading="lazy" />
-							<figcaption class="card_title">SUBHAM KUMAR Globalink Research Internship at
-								MITACS (York University, Toronto).</figcaption>
-						</figure>
-					</div>
-					<div class="cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
-						<figure class="card">
-							<img src="./Animated-Portfolio-main/achivements/SHREYAS KUMAR TAH.png" alt="" width="300"
-								height="200" loading="lazy" />
-							<figcaption class="card_title">SHREYAS KUMAR TAH
-								Research Assistant
-								at IACV Lab, Indian Institute of Science(IISC).</figcaption>
-						</figure>
-					</div>
-					<div class="cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
-						<figure class="card">
-							<img src="./Animated-Portfolio-main/achivements/TEJ NARAYAN KUMAR.png" alt="" width="300"
-								height="200" loading="lazy" />
-							<figcaption class="card_title">TEJ NARAYAN KUMAR
-								intern at the U R Rao Satellite Centre
-								(URSC), ISRO</figcaption>
-						</figure>
-					</div>
-					<div class="cards" data-aos="fade-up" data-aos-anchor-placement="top-center">
-						<figure class="card">
-							<img src="./Animated-Portfolio-main/achivements/KUMAR SATYAM SAURABH.png" alt="" width="300"
-								height="200" loading="lazy" />
-							<figcaption class="card_title">KUMAR SATYAM SAURABH Participated in the Drone Development Challenge
-								(DDC-
-								2024) - SAEISS </figcaption>
-						</figure>
-					</div>
-
 				</div>
 			</div>
-		</div>
-
-		<div class="footer" data-aos="fade-up">
-			<section class="footer">
-				<div class="footer-row">
-					<div class="footer-col">
-						<h4>Quick Links</h4>
-						<ul class="links">
-							<li><a href="./index.html">Home</a></li>
-							<li><a href="./Yantrika.html">Yantrika</a></li>
-							<li><a href="./Members.html">Members</a></li>
-							<li><a href="./Gallery.html">Gallery</a></li>
-							<li><a href="./join.html">Join Us</a></li>
-						</ul>
-					</div>
-					<div class="footer-col">
-						<h4>Find Us</h4>
-						<ul class="links">
-							<li><i class="fas fa-map-marker-alt"></i> BIT Sindri</li>
-							<li><i class="fas fa-road"></i> Dhanbad - 828123</li>
-							<li><i class="fas fa-globe"></i> Jharkhand, India</li>
-						</ul>
-					</div>
-					<div class="footer-col">
-						<h4>Contact Us</h4>
-						<ul class="links">
-							<li><i class="fas fa-envelope"></i> mes@bitdhanbad.ac.in</li>
-							<li><i class="fas fa-phone"></i> +91 9831000000</li>
-							<li><i class="fas fa-clock"></i> Mon-Fri: 9AM-5PM</li>
-						</ul>
-					</div>
-					<div class="footer-col">
-						<h4>Follow Us</h4>
-						<div class="social-links">
-							<a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-							<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-							<a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-							<a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+			<div
+				class="page7"
+				data-aos="fade-up">
+				<h2>ENGINEER YOUR FUTURE</h2>
+				<div class="future-content">
+					<p
+						class="highlight-text"
+						data-aos="fade-up"
+						data-aos-delay="300">
+						Join a community that transforms classroom concepts into real-world innovations. MES isn't just a society - it's your gateway to industry connections, cutting-edge research, and the collaborative spirit that defines modern engineering excellence.
+					</p>
+					<div
+						class="future-icons"
+						data-aos="zoom-in"
+						data-aos-duration="2000">
+						<div class="future-icon">
+							<i class="fa-solid fa-graduation-cap"></i>
+							<span>Academic Excellence</span>
 						</div>
-						<div class="newsletter">
-							<h4>Stay Updated</h4>
-							<form action="#" class="newsletter-form">
-								<input type="email" placeholder="Enter your email" required>
-								<button type="submit"><i class="fas fa-paper-plane"></i></button>
-							</form>
+						<div class="future-icon">
+							<i class="fa-solid fa-industry"></i>
+							<span>Industry Connect</span>
+						</div>
+						<div class="future-icon">
+							<i class="fa-solid fa-lightbulb"></i>
+							<span>Innovation Hub</span>
 						</div>
 					</div>
+					<a href="./join.html">
+						<button
+							class="future-btn"
+							data-aos="flip-up"
+							data-aos-delay="400">
+							JOIN US
+						</button>
+					</a>
 				</div>
-				<div class="footer-bottom">
-					<p class="copyright">Design And Developed by Team MES. Copyright © 2025. All Rights Reserved.</p>
+			</div>
+			<div
+				class="page6"
+				data-aos="fade-up"
+				data-aos-anchor-placement="top-center"
+				data-aos-duration="2000">
+				<h2>Achievements</h2>
+				<div class="page6event">
+					<div class="smallcard">
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="Animated-Portfolio-main/achivements/PERMINDER SINGH sir.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">PERMINDER SINGH Google Summer of Code 2024</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/SHUBHAM SHARMA.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">SUBHAM KUMAR Globalink Research Internship at MITACS (York University, Toronto).</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/SHREYAS KUMAR TAH.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">SHREYAS KUMAR TAH Research Assistant at IACV Lab, Indian Institute of Science(IISC).</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/TEJ NARAYAN KUMAR.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">TEJ NARAYAN KUMAR intern at the U R Rao Satellite Centre (URSC), ISRO</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/KUMAR SATYAM SAURABH.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">KUMAR SATYAM SAURABH Participated in the Drone Development Challenge (DDC- 2024) - SAEISS</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/AMIT KUMAR NAYAK.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">AMIT KUMAR NAYAK intern at U R Rao Satellite Centre (URSC), ISRO</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/ANAND KUMAR PASWAN.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">ANAND KUMAR PASWAN secured the second prize in the Science Exhibition held at CSIR-CIMFR</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/SMART INDIA HACKATHON - 2023.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">to the finals of the Smart India Hackathon 2023</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/NTPC ELECTRON QUIZ 2023.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">represented our college in the National level quiz</figcaption>
+							</figure>
+						</div>
+						<div
+							class="cards"
+							data-aos="fade-up"
+							data-aos-anchor-placement="top-center">
+							<figure class="card">
+								<img
+									src="./Animated-Portfolio-main/achivements/department.png"
+									alt=""
+									width="300"
+									height="200"
+									loading="lazy" />
+								<figcaption class="card_title">Mechanical Engineering department has proudly received NBA accreditation for the academic year 2023-2024.</figcaption>
+							</figure>
+						</div>
+					</div>
 				</div>
-			</section>
-		</div>
-	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
-	<script defer src="script.js"></script>
-</body>
+			</div>
 
+			<div
+				class="footer"
+				data-aos="fade-up">
+				<section class="footer">
+					<div class="footer-row">
+						<div class="footer-col">
+							<h4>Quick Links</h4>
+							<ul class="links">
+								<li><a href="./index.html">Home</a></li>
+								<li><a href="./Yantrika.html">Yantrika</a></li>
+								<li><a href="./Members.html">Members</a></li>
+								<li><a href="./Gallery.html">Gallery</a></li>
+								<li><a href="./join.html">Join Us</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Find Us</h4>
+							<ul class="links">
+								<li>
+									<i class="fas fa-map-marker-alt"></i>
+									BIT Sindri
+								</li>
+								<li>
+									<i class="fas fa-road"></i>
+									Dhanbad - 828123
+								</li>
+								<li>
+									<i class="fas fa-globe"></i>
+									Jharkhand, India
+								</li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Contact Us</h4>
+							<ul class="links">
+								<li>
+									<i class="fas fa-envelope"></i>
+									mes@bitdhanbad.ac.in
+								</li>
+								<li>
+									<i class="fas fa-phone"></i>
+									+91 9831000000
+								</li>
+								<li>
+									<i class="fas fa-clock"></i>
+									Mon-Fri: 9AM-5PM
+								</li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Follow Us</h4>
+							<div class="social-links">
+								<a
+									href="#"
+									class="social-icon">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a
+									href="#"
+									class="social-icon">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a
+									href="#"
+									class="social-icon">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+								<a
+									href="#"
+									class="social-icon">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+							<div class="newsletter">
+								<h4>Stay Updated</h4>
+								<form
+									action="#"
+									class="newsletter-form">
+									<input
+										type="email"
+										placeholder="Enter your email"
+										required />
+									<button type="submit"><i class="fas fa-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<p class="copyright">Design And Developed by Team MES. Copyright © 2025. All Rights Reserved.</p>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script
+			defer
+			src="script.js"></script>
+	</body>
 </html>

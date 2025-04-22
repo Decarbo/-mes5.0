@@ -1,88 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>JOIN MES</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<!-- <link rel="stylesheet" href="style.css" /> -->
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>JOIN MES</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- <link rel="stylesheet" href="style.css" /> -->
+		<link
+			rel="stylesheet"
+			href="navbar.css" />
+		<link
+			rel="stylesheet"
+			href="join.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+	</head>
 
-	<link rel="stylesheet" href="navbar.css" />
-	<link rel="stylesheet" href="join.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-</head>
-
-<body>
-	<nav class="navbar" data-aos="fade-down">
-		<div class="logo">
-			<div>
-				<img class="bitlogo" src="Animated-Portfolio-main/logo/BitSindrilogo.webp" alt="BIT Sindri Logo" width="50"
-					height="50">
+	<body>
+		<nav
+			class="navbar"
+			data-aos="fade-down">
+			<div class="logo">
+				<div>
+					<img
+						class="bitlogo"
+						src="Animated-Portfolio-main/logo/BitSindrilogo.webp"
+						alt="BIT Sindri Logo"
+						width="50"
+						height="50" />
+				</div>
+				<div>
+					<img
+						src="Animated-Portfolio-main/logo/mech logo2 best final-3.webp"
+						alt="MES Logo"
+						width="50"
+						height="55" />
+				</div>
 			</div>
-			<div>
-				<img src="Animated-Portfolio-main/logo/mech logo2 best final-3.webp" alt="MES Logo" width="50" height="55">
+			<div
+				class="menu-toggle"
+				id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</div>
+			<ul class="nav-list">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./Yantrika.html">Yantrika</a></li>
+				<li><a href="./Members.html">Members</a></li>
+				<li><a href="./Gallery.html">Gallery</a></li>
+				<li>
+					<a
+						href="./join.html"
+						id="active">
+						Join
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-		</div>
-		<div class="menu-toggle" id="mobile-menu">
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</div>
-		<ul class="nav-list">
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="./Yantrika.html">Yantrika</a></li>
-			<li><a href="./Members.html">Members</a></li>
-			<li><a href="./Gallery.html">Gallery</a></li>
-			<li><a href="./join.html" id="active">Join</a></li>
-		</ul>
-	</nav>
+		<div class="page1">
+			<div
+				class="container"
+				data-aos="zoom-in">
+				<div
+					class="join-header"
+					data-aos="fade-up">
+					<h1>BECOME THE ENGINEER THE WORLD NEEDS</h1>
+					<p
+						class="highlight-text"
+						data-aos="fade-up"
+						data-aos-delay="300">
+						Take the first step toward transforming your academic journey into a launchpad for innovation. MES membership isn't just an affiliation - it's your toolkit for professional growth and technical mastery.
+					</p>
+				</div>
 
-	<div class="page1">
+				<h2 data-aos="fade-up">Join Us Today</h2>
+				<form
+					id="contactForm"
+					data-aos="fade-up"
+					onsubmit="return false;">
+					<input
+						type="hidden"
+						id="userId"
+						name="userId"
+						value="YOUR_USER_ID" />
 
+					<label for="name">Name:</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						required />
 
+					<label for="regNumber">Registration Number:</label>
+					<input
+						type="text"
+						id="regNumber"
+						name="regNumber"
+						required />
 
-		<div class="container" data-aos="zoom-in">
-			<div class="join-header" data-aos="fade-up">
-				<h1>BECOME THE ENGINEER THE WORLD NEEDS</h1>
-				<p class="highlight-text" data-aos="fade-up" data-aos-delay="300">
-					Take the first step toward transforming your academic journey into a launchpad for innovation. MES
-					membership isn't just an affiliation - it's your toolkit for professional growth and technical mastery.
-				</p>
+					<label for="phone">Phone Number:</label>
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						required />
+
+					<label for="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required />
+
+					<label for="message">Tell us why you want to join MES:</label>
+					<textarea
+						id="message"
+						name="message"
+						rows="4"
+						required></textarea>
+
+					<button
+						type="button"
+						id="submitBtn">
+						Submit Application
+					</button>
+				</form>
+				<div id="responseMessage"></div>
 			</div>
-
-
-
-			<h2 data-aos="fade-up">Join Us Today</h2>
-			<form id="contactForm" data-aos="fade-up" onsubmit="return false;">
-				<input type="hidden" id="userId" name="userId" value="YOUR_USER_ID" />
-
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required />
-
-				<label for="regNumber">Registration Number:</label>
-				<input type="text" id="regNumber" name="regNumber" required />
-
-				<label for="phone">Phone Number:</label>
-				<input type="tel" id="phone" name="phone" required />
-
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required />
-
-				<label for="message">Tell us why you want to join MES:</label>
-				<textarea id="message" name="message" rows="4" required></textarea>
-
-				<button type="button" id="submitBtn">Submit Application</button>
-			</form>
-			<div id="responseMessage"></div>
 		</div>
-	</div>
 
-
-	<!-- <div class="footer" data-aos="fade-up">
+		<!-- <div class="footer" data-aos="fade-up">
 		<section class="footer">
 			<div class="footer-row">
 				<div class="footer-col">
@@ -111,56 +169,59 @@
 		</section>
 	</div> -->
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-	</script>
-	<script>
-		// Initialize EmailJS
-		(function () {
-			emailjs.init('eTzUFYu_yPPPlKYHo'); // Replace with your EmailJS user ID
-		})();
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+		<script>
+			// Initialize EmailJS
+			(function () {
+				emailjs.init('eTzUFYu_yPPPlKYHo'); // Replace with your EmailJS user ID
+			})();
 
-		document.getElementById('submitBtn').addEventListener('click', function () {
-			const name = document.getElementById('name').value;
-			const regNumber = document.getElementById('regNumber').value;
-			const phone = document.getElementById('phone').value;
-			const email = document.getElementById('email').value;
-			const message = document.getElementById('message').value;
+			document.getElementById('submitBtn').addEventListener('click', function () {
+				const name = document.getElementById('name').value;
+				const regNumber = document.getElementById('regNumber').value;
+				const phone = document.getElementById('phone').value;
+				const email = document.getElementById('email').value;
+				const message = document.getElementById('message').value;
 
-			// Show a loading message
-			document.getElementById('responseMessage').innerText = 'Sending your application...';
+				// Show a loading message
+				document.getElementById('responseMessage').innerText = 'Sending your application...';
 
-			const templateParams = {
-				name: name,
-				regNumber: regNumber,
-				phone: phone,
-				email: email,
-				message: message
-			};
+				const templateParams = {
+					name: name,
+					regNumber: regNumber,
+					phone: phone,
+					email: email,
+					message: message,
+				};
 
-			emailjs.send('service_zqd9rka', 'template_vcptv3q', templateParams)
-				.then(function (response) {
-					document.getElementById('responseMessage').innerText = 'Message sent successfully!';
-					console.log('SUCCESS!', response.status, response.text);
-					// Optionally clear the form
-					document.getElementById('contactForm').reset();
-				}, function (error) {
-					document.getElementById('responseMessage').innerText = 'Failed to send message. Please try again.';
-					console.log('FAILED...', error);
-				});
-		});
+				emailjs.send('service_zqd9rka', 'template_vcptv3q', templateParams).then(
+					function (response) {
+						document.getElementById('responseMessage').innerText = 'Message sent successfully!';
+						console.log('SUCCESS!', response.status, response.text);
+						// Optionally clear the form
+						document.getElementById('contactForm').reset();
+					},
+					function (error) {
+						document.getElementById('responseMessage').innerText = 'Failed to send message. Please try again.';
+						console.log('FAILED...', error);
+					}
+				);
+			});
 
-		// Add form validation if needed
-		document.getElementById('contactForm').addEventListener('submit', function (event) {
-			event.preventDefault(); // Belt and suspenders approach
-			return false;
-		});
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-	<script>
-		AOS.init();
-
-	</script>
-	<script defer src="script.js"></script>
-</body>
-
+			// Add form validation if needed
+			document.getElementById('contactForm').addEventListener('submit', function (event) {
+				event.preventDefault(); // Belt and suspenders approach
+				return false;
+			});
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script
+			defer
+			src="script.js"></script>
+	</body>
 </html>
