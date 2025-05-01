@@ -93,8 +93,9 @@ function typeWriter() {
 window.addEventListener('load', typeWriter);
 
 // Initialize Yantrika Swiper
+
 const yantrikaSwiper = new Swiper('.yantrikaSwiper', {
-	slidesPerView: 1,
+	slidesPerView: 3,
 	centeredSlides: true,
 	spaceBetween: 30,
 	loop: true,
@@ -112,10 +113,10 @@ const yantrikaSwiper = new Swiper('.yantrikaSwiper', {
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 1,
+			slidesPerView: 1 ,
 		},
 		768: {
-			slidesPerView: 3,
+			slidesPerView: 2,
 		},
 	},
 });

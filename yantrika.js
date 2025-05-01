@@ -6,6 +6,6 @@ var swiper = new Swiper('.swiper', {
 	loop: true,
 	rotate: true,
 	mousewheel: {
-		invert: false,
+		invert: true,
 	},
 });

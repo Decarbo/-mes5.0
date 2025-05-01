@@ -265,6 +265,7 @@ body {
 }
 
 .role-section {
+  width: 100%   ;
 	margin-bottom: 3rem;
 	max-width: 80vw;
 	margin: auto;
@@ -278,7 +279,7 @@ body {
 .role-title {
 	color: #7489c6;
 	text-align: center;
-	font-size: 1.8rem;
+	/* font-size: 1.8rem; */
 	margin: 1.5rem;
 	position: relative;
 	letter-spacing: 0.1rem;
@@ -372,7 +373,7 @@ body {
 	}
 
 	.role-title {
-		font-size: 1.6rem;
+		font-size: 1rem;
 	}
 
 	.member-image {
@@ -397,7 +398,7 @@ body {
 	}
 
 	.role-title {
-		font-size: 1.4rem;
+		font-size: 1rem;
 	}
 
 	.member-card {
@@ -420,7 +421,7 @@ body {
 
 	.role-title {
 		margin-top: 1rem;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	.page1 h1 {
@@ -441,6 +442,9 @@ body {
 		width: 100%;
 		text-align: center;
 	}
+  .club{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 576px) {
@@ -648,4 +652,13 @@ html {
 
 .dropdown-toggle.active + #dropdown .batch-link {
 	display: block;
+}
+
+
+.club{
+  gap: 1rem;
+  display: flex   ;
+  flex: 1;
+  max-width: 80vw;
+  margin: 0 auto;
 }

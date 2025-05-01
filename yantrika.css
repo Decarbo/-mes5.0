@@ -34,11 +34,16 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'font6';
+	src: url('Animated-Portfolio-main/underwave.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 .page1 {
 	/* background: url(./Animated-Portfolio-main/yantrikaevents/yantrikapp.webp); */
 	/* padding: 1rem; */
-	/* padding-top: 3rem; */
+	padding-top: 4rem;
 	min-height: 70vh;
 	text-align: center;
 	background-color: #030140;
@@ -83,12 +88,12 @@ body {
 }
 
 .events {
-	font-family: font2;
+	font-family: font6;
 	font-size: 1.5rem;
 	color: aliceblue;
 	margin-top: 3rem;
 	letter-spacing: 0.3rem;
-	text-align: end;
+	text-align: center;
 	border: 1px solid #7489c6;
 	padding: 1rem;
 	border-radius: 1rem;
@@ -219,7 +224,7 @@ section {
 }
 
 .page2 {
-	background: linear-gradient(180deg, #030140, #010101);
+	background: linear-gradient(0deg, #030140, #010101);
 
 	/* max-width: 90vw; */
 	margin: auto;
@@ -295,8 +300,8 @@ section {
 /* SWIPER */
 
 .swiper {
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
 
 	padding: 2rem;
 }
@@ -318,13 +323,13 @@ section {
 	color: #ff3cac;
 	text-align: center;
 	background-color: #030140;
-	border-radius: 1rem;
+	border-radius: 0.4rem;
 	/* color: white; */
 	position: relative;
 	padding-left: 1rem;
 }
 
-.swiper-slide img {
+.event-logo img {
 	position: absolute;
 	inset: 0;
 	width: 100%;
@@ -498,20 +503,31 @@ section {
 
 .events-section {
 	padding: 4rem 2rem;
-	background: linear-gradient(37deg, #030140, #010101);
+	background: linear-gradient(180deg, #030140, #010101);
 	min-height: 100vh;
 }
 
 .section-title {
 	text-align: center;
 	color: #e2eff7;
-	font-family: font2;
+	font-family: font6;
 	font-size: 4rem;
 	letter-spacing: 0.5rem;
 	margin-bottom: 3rem;
 	opacity: 0;
 	transform: translateY(30px);
 	animation: fadeInUp 0.8s ease forwards;
+		-webkit-text-stroke: 0.1rem #d5dde4;
+	color: rgba(0, 0, 0, 0);
+	text-transform: uppercase;
+
+	background: linear-gradient(15deg, #ffee0170, #fffffffe);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+	font-size: 3rem;
+	letter-spacing: 0.3rem;
+	text-shadow: 0 0 10px rgba(179, 189, 225, 0.5), 0 0 20px rgba(179, 189, 225, 0.3), 0 0 30px rgba(179, 189, 225, 0.2);
 }
 
 .event-container {
@@ -577,6 +593,10 @@ section {
 }
 
 .event-image {
+	    display: flex
+;
+    justify-content: center;
+    align-items: center;
 	flex: 1;
 	position: relative;
 	overflow: hidden;
@@ -626,6 +646,7 @@ section {
 	}
 
 	.section-title {
+		font-family: font6;
 		font-size: 2.5rem;
 	}
 }
@@ -1035,4 +1056,167 @@ section {
 	width: 80%;
 	height: 100%;
 	object-fit: contain;
+}
+.pinterest-gallery {
+	/* padding: 2rem;
+	background: #030140;
+	background: linear-gradient(180deg, #030140, #030140); */
+}
+
+.pinterest-grid {
+	columns: 3;
+	column-gap: 1.5rem;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.pinterest-item {
+	break-inside: avoid;
+	margin-bottom: 1.5rem;
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
+	width: 100%;
+}
+
+.pinterest-item:hover {
+	transform: translateY(-5px);
+}
+
+.pinterest-item img {
+	width: 100%;
+	display: block;
+	border-radius: 8px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+	object-fit: cover;
+	height: auto;
+	/* filter: blur(10px); */
+	transform: scale(1.1);
+}
+
+.pinterest-item img.loaded {
+	filter: blur(0);
+	transform: scale(1);
+}
+
+.pinterest-item:hover img {
+	transform: scale(1.05);
+}
+
+.pinterest-caption {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(3, 1, 64, 0.8);
+	color: #e2eff7;
+	padding: 1rem;
+	transform: translateY(100%);
+	transition: transform 0.3s ease;
+	backdrop-filter: blur(5px);
+}
+
+.pinterest-item:hover .pinterest-caption {
+	transform: translateY(0);
+}
+
+.pinterest-caption h3 {
+	margin: 0 0 5px;
+	font-family: font4;
+	font-size: 1.2rem;
+}
+
+.pinterest-caption p {
+	margin: 0;
+	font-size: 0.9rem;
+	opacity: 0.9;
+}
+
+/* Responsive Pinterest Gallery */
+@media (max-width: 1200px) {
+	.pinterest-grid {
+		columns: 2;
+		column-gap: 1rem;
+	}
+
+	.pinterest-item {
+		margin-bottom: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.pinterest-grid {
+		columns: 1;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.pinterest-item {
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+
+	.pinterest-item img {
+		height: auto;
+		max-height: 400px;
+		object-fit: cover;
+	}
+
+	.pinterest-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(3, 1, 64, 0.85);
+		padding: 0.8rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.pinterest-gallery {
+		padding: 1rem;
+	}
+
+	.pinterest-grid {
+		max-width: 100%;
+	}
+
+	.pinterest-item {
+		margin-bottom: 0.8rem;
+	}
+
+	.pinterest-item img {
+		max-height: 350px;
+	}
+
+	.pinterest-caption {
+		padding: 0.7rem;
+	}
+
+	.pinterest-caption h3 {
+		font-size: 1rem;
+	}
+
+	.pinterest-caption p {
+		font-size: 0.8rem;
+	}
+}
+
+/* Add touch interaction for mobile */
+@media (hover: none) {
+	.pinterest-item {
+		cursor: pointer;
+	}
+
+	.pinterest-caption {
+		transform: translateY(0);
+		opacity: 0.9;
+	}
+
+	.pinterest-item:active {
+		transform: translateY(-3px);
+	}
 }
