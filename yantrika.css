@@ -1057,6 +1057,20 @@ section {
 	height: 100%;
 	object-fit: contain;
 }
+.yantyrikaposter{
+	width: 100%;
+}
+.yantyrikaposter img {
+	/* background-color: red; */
+	/* background: linear-gradient(#fff, #ffe29d); */
+	/* -webkit-text-fill-color: transparent; */
+	/* -webkit-background-clip: text; */
+	/* mix-blend-mode: color-dodge; */
+	margin:1rem 0;
+	width: 80%;
+	height: 100%;
+	object-fit: contain;
+}
 .pinterest-gallery {
 	/* padding: 2rem;
 	background: #030140;

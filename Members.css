@@ -652,6 +652,7 @@ html {
 
 .dropdown-toggle.active + #dropdown .batch-link {
 	display: block;
+	
 }
 
 

@@ -112,6 +112,9 @@ const yantrikaSwiper = new Swiper('.yantrikaSwiper', {
 		prevEl: '.swiper-button-prev',
 	},
 	breakpoints: {
+		0: {
+			slidesPerView: 1 ,
+		},
 		320: {
 			slidesPerView: 1 ,
 		},
