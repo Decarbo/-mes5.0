@@ -19,7 +19,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'font6';
+	src: url('Animated-Portfolio-main/underwave.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 @font-face {
 	font-family: 'font3';
 	src: url('./Animated-Portfolio-main/Infusive.ttf') format('truetype');
@@ -62,9 +67,18 @@ body {
 	padding-top: 6rem;
 	text-align: center;
 	color: #e2eff7;
-	font-family: font2;
+	font-family: font6;
 	font-size: 4rem;
 	letter-spacing: 0.7rem;
+	    -webkit-text-stroke: 0.1rem #d5dde4;
+    color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    background: linear-gradient(15deg, #ffee0170, #fffffffe);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 0 0 10px rgba(179, 189, 225, 0.5), 0 0 20px rgba(179, 189, 225, 0.3), 0 0 30px rgba(179, 189, 225, 0.2);
 }
 
 .members {
@@ -465,11 +479,11 @@ body {
 	}
 
 	.member-info h3 {
-		font-size: 0.7rem;
+		font-size: 1rem;
 	}
 
 	.member-info h4 {
-		font-size: 0.75rem;
+		font-size: 0.85rem;
 	}
 
 	.member-info p {
@@ -652,7 +666,7 @@ html {
 
 .dropdown-toggle.active + #dropdown .batch-link {
 	display: block;
-	
+
 }
 
 

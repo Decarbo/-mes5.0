@@ -11,7 +11,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
+	/* position: fixed; */
 	/* Keep the navbar fixed at the top */
 	width: 100%;
 	background: linear-gradient(transparent, #eeeeee1a);
@@ -55,9 +55,9 @@
 }
 
 #active {
-	background-color: #b3bde1;
+	background-color: #19C3DF;
 	/* Light hover effect */
-	border-radius: 0.5rem;
+	border-radius: 0.3rem;
 }
 
 .nav-list li {
@@ -74,9 +74,9 @@
 }
 
 .nav-list a:hover {
-	background-color: #b3bde1;
+	background-color: #19C3DF;
 	/* Light hover effect */
-	border-radius: 5px;
+	border-radius: 3px;
 	letter-spacing: 0.1rem;
 	transition: ease-in 0.3s;
 }

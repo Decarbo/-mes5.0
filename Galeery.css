@@ -6,11 +6,12 @@
 	box-sizing: border-box;
 }
 
-body {
-}
+
 
 .page1 {
+	padding-top: 5rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
@@ -127,8 +128,8 @@ body {
 
 .swiper-slide {
 	text-align: center;
-	background: #030140;
-	background: linear-gradient(180deg, #030140, #030140);
+	/* background: #030140; */
+	/* background: linear-gradient(180deg, #030140, #030140); */
 	display: flex;
 	max-height: 80%;
 	justify-content: center;
@@ -375,8 +376,8 @@ body {
 .mesimg {
 	border-radius: 1rem;
 	position: relative;
-	width: 100%;
-	height: 300px;
+	width: 80%;
+	min-height: 300px;
 	overflow: hidden;
 }
 
